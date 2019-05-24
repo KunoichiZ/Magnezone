@@ -1,0 +1,28 @@
+{
+  "name": "pxr-bot",
+  "version": "0.0.0",
+  "description": "Discord bot for PXR Discord Server",
+  "main": "index.js",
+  "repository": "https://github.com/KunoichiZ/PXR-Bot.git",
+  "author": "KunoichiZ",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "pxr",
+    "discord-bot",
+    "discordjs",
+    "discord",
+    "pokemon-crossroads"
+  ],
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "awesome-commando": "^3.0.8",
+    "awesome-djs": "^13.0.14",
+    "better-sqlite3": "^5.4.0",
+    "dotenv": "^8.0.0",
+    "sqlite": "^3.0.3"
+  }
+}
