@@ -18,6 +18,9 @@ sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
 client.registry
   .registerDefaultTypes()
   .registerGroups([
+    ['moderation', 'Moderation Commands'],
+    ['owner', 'Owner Commands'],
+    ['roles', 'Role Commands'],
     ['test', 'Test Commands']
   ])
   .registerDefaultGroups()
