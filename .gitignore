@@ -1,0 +1,21 @@
+# Node modules need to be installed through yarn
+node_modules/
+
+# Environment variables
+.env
+
+# Any logs created
+*.log
+
+# ignore sqlite databases
+*.sqlite3
+*.sqlite
+
+# VSCode settings
+.vscode/
+
+# Data folder
+data/*
+!data/.env.template
+
+.DS_Store
