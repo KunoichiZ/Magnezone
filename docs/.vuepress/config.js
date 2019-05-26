@@ -7,18 +7,18 @@ module.exports = {
     logo: '/logo.png',
     theme: 'yuu',
     themeConfig: {
-		yuu: {
-			colorThemes: ['blue', 'red']
-		},
-		repo: 'KunoichiZ/PXR-Bot',
-		base: 'PXR-Bot',
-		docsDir: 'docs',
-		sidebarDepth: 2,
-		editLinks: true,
-		nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Commands', link: '/commands/' }
-      // { text: 'External', link: 'https://google.com' },
-    ]
-	}
+			yuu: {
+				colorThemes: ['blue', 'red']
+			},
+			repo: 'KunoichiZ/PXR-Bot',
+			base: 'PXR-Bot',
+			docsDir: 'docs',
+			sidebarDepth: 3,
+			editLinks: true,
+			nav: [
+      	{ text: 'Home', link: '/' },
+      	{ text: 'Commands', link: '/commands/' }
+      	// { text: 'External', link: 'https://google.com' },
+    	]
+		}
 }
