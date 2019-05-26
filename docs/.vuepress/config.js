@@ -11,7 +11,7 @@ module.exports = {
 				colorThemes: ['blue', 'red']
 			},
 			repo: 'KunoichiZ/PXR-Bot',
-			base: 'PXR-Bot',
+			base: '/PXR-Bot/',
 			docsDir: 'docs',
 			sidebarDepth: 3,
 			editLinks: true,
