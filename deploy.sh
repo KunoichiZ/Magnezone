@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-# if you are deploying to https://kunoichiz.github.io/pxr-bot
+# if you are deploying to https://kunoichiz.github.io/PXR-Bot
 git push -f git@github.com:KunoichiZ/PXR-Bot.git master:gh-pages
 
 cd -
