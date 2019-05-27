@@ -17,8 +17,8 @@ module.exports = {
 			editLinks: true,
 			nav: [
       	{ text: 'Home', link: '/' },
-      	{ text: 'Commands', link: '/commands/' }
-      	// { text: 'External', link: 'https://google.com' },
+      	{ text: 'Commands', link: '/commands/' },
+      	{ text: 'PXR Discord Server', link: 'https://discord.gg/VE7SSpp' }
     	]
 		},
 		lastUpdated: 'Last Updated'
