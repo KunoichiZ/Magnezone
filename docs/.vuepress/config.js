@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'PXR Discord Bot Documentation',
+    title: 'PXR Discord Bot',
 		description: 'Documentation for the PXR Discord Bot',
 		head: [
 			['link', { rel: 'icon', href: 'logo.png' }]
@@ -20,5 +20,6 @@ module.exports = {
       	{ text: 'Commands', link: '/commands/' }
       	// { text: 'External', link: 'https://google.com' },
     	]
-		}
+		},
+		lastUpdated: 'Last Updated'
 }
