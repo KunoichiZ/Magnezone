@@ -2,7 +2,7 @@ module.exports = {
     title: 'PXR Discord Bot',
 		description: 'Documentation for the PXR Discord Bot',
 		head: [
-			['link', { rel: 'icon', href: 'logo.png' }]
+			['link', { rel: 'icon', href: '/logo.png' }]
 		],
     logo: '/logo.png',
     theme: 'yuu',
