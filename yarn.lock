@@ -1282,9 +1282,9 @@ awesome-commando@^3.0.8:
     require-all "^3.0.0"
 
 awesome-djs@^13.0.14:
-  version "13.0.14"
-  resolved "https://registry.yarnpkg.com/awesome-djs/-/awesome-djs-13.0.14.tgz#cb35f84ccd86315cf75ff9d06084cd5f587f9a05"
-  integrity sha512-gLGsddeRzQ9w8GRmv771WmIME875VaJmp8j7iv5cfrKmDKJHzFp2CbKEwTKk92P0F/Jczz7eH8hHDuwY37Rw3g==
+  version "13.0.15"
+  resolved "https://registry.yarnpkg.com/awesome-djs/-/awesome-djs-13.0.15.tgz#1f134652324a0932cba7df5626c952d67bd16df3"
+  integrity sha512-ioOOJwAj14ZSaBh2BuFd86uQcvdyygyTR0FYePCkdJ/B2kP+sZROzR6WoguuYWRmoT3MVe0j684C5baT3DxODg==
   dependencies:
     form-data "^2.3.3"
     node-fetch "^2.3.0"
