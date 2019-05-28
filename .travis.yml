@@ -1,30 +1,17 @@
 language: node_js
 node_js:
-    - "10"
-env:
-    - CXX=g++-4.8
-addons:
-    apt:
-        sources:
-            - ubuntu-toolchain-r-test
-        packages:
-            - g++-4.8
+  - "node"
 install:
-    - npm install -g vuepress
+  - npm install -g vuepress
 script:
-    - npm run docs:build
-cache:
-    directories:
-        - "node_modules"
-notifications:
-    email: false
+  - vuepress build && cd docs/.vuepress/dist && echo 'www.pxr-bot.kunoichiz.me' > CNAME
 deploy:
-    provider: pages
-    skip-cleanup: true
-    local_dir: docs/.vuepress/dist
-    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: KunoichiZ/PXR-Bot
-    keep-history: true
-    target-branch: gh-pages
-    on:
-        branch: gh-pages
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+        branch: master
+  local_dir: docs/.vuepress/dist
+  repo: KunoichiZ/PXR-Bot
+  keep-history: true
+  target-branch: gh-pages
