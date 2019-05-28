@@ -1,28 +1,30 @@
 language: node_js
 node_js:
     - "10"
-
-cache:
-  directories:
-    - "node_modules"
-
-branches:
-  only:
-  - master
-
+env:
+    - CXX=g++-4.8
+addons:
+    apt:
+        sources:
+            - ubuntu-toolchain-r-test
+        packages:
+            - g++-4.8
 install:
-  - npm install -g vuepress
-
+    - npm install -g vuepress
 script:
-  - npm run docs:build
-  - echo "Skipping tests"
-
+    - npm run docs:build
+cache:
+    directories:
+        - "node_modules"
+notifications:
+    email: false
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure
-  target-branch: gh-pages
-  local-dir: local_dir: docs/.vuepress/dist
-  repo: KunoichiZ/PXR-Bot
-  on:
-    branch: master
+    provider: pages
+    skip-cleanup: true
+    local_dir: docs/.vuepress/dist
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    repo: KunoichiZ/PXR-Bot
+    keep-history: true
+    target-branch: gh-pages
+    on:
+        branch: gh-pages
