@@ -2,7 +2,7 @@
 node_modules/
 
 # Environment variables
-.env
+data/.env
 
 # Any logs created
 *.log
@@ -13,9 +13,5 @@ node_modules/
 
 # VSCode settings
 .vscode/
-
-# Data folder
-data/*
-!data/.env.template
 
 .DS_Store
