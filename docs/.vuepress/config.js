@@ -21,5 +21,5 @@ module.exports = {
       	{ text: 'PXR Discord Server', link: 'https://discord.gg/VE7SSpp' }
     	]
 		},
-		lastUpdated: 'Last Updated'
+		lastUpdated: true
 }
