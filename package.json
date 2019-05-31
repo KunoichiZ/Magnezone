@@ -26,6 +26,7 @@
     "awesome-djs": "^13.0.14",
     "better-sqlite3": "^5.4.0",
     "dotenv": "^8.0.0",
+    "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.2.2",
     "sqlite": "^3.0.3"
