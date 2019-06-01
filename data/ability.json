@@ -1,4 +1,4 @@
-[
+{"abilities":[
     {
         "shortDesc": "Does nothing.",
         "id": "noability",
@@ -1558,4 +1558,4 @@
         "name": "Persistent",
         "num": -4
     }
-]
+]}
