@@ -15,6 +15,9 @@
     "discord.js-commando",
     "pokemon-crossroads"
   ],
+  "bugs": {
+    "url": "https://github.com/KunoichiZ/PXR-Bot/issues"
+  },
   "scripts": {
     "test": "node index.js",
     "start": "node index.js",
