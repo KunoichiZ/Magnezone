@@ -1,6 +1,7 @@
 const {Command} = require('awesome-commando');
-import { MessageEmbed } from 'awesome-djs';
-import Fuse from 'fuse.js';
+const MessageEmbed = require('awesome-djs');
+const Fuse = require('fuse.js');
+var fs = require("fs");
 let abilities = JSON.parse(fs.readFileSync("./data/ability.json", "utf8"))
 
 var options = {
