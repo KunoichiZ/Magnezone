@@ -6,7 +6,7 @@ require('dotenv').config({path: path.join(__dirname, 'data/.env')});
 
 const client = new Client({
   owner: '147800635046232064',
-  commandPrefix: process.env.prefix,
+  commandPrefix: process.env.PREFIX,
   disableEveryone: true,
   unknownCommandResponse: false,
   selfbot: false
@@ -18,8 +18,10 @@ sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
 client.registry
   .registerDefaultTypes()
   .registerGroups([
+    ['info', 'Information Commands'],
     ['moderation', 'Moderation Commands'],
     ['owner', 'Owner Commands'],
+    ['pokemon', 'Pokemon Commands'],
     ['roles', 'Role Commands'],
     ['test', 'Test Commands']
   ])
