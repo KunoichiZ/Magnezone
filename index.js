@@ -41,6 +41,12 @@ client.registry
 client.on('ready', () => {
   console.log('Logged in!');
 });
+
+client.on('guildMemberAdd', member => {
+  // Don't know the role id?
+  const role = member.guild.roles.find(role => role.name === 'Members');
+  member.roles.add(role);
+});
  
 client.on('error', console.error);
 
