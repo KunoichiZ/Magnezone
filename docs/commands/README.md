@@ -18,12 +18,16 @@ Eval command description taken from the official discord.js-commando [documentat
 | about			| Replies with information about the bot | N/A |
 | docs			| Replies with a link to the bot's documentation | documentation |
 | help          | Displays a list of available commands, or detailed information for a specified command. | N/A |
+| invite		| Replies with an invite link to the server | N/A |
 | ping          | Checks the bot's ping to the Discord server.     | N/A |
 | prefix        | Shows the command prefix.      | N/A |
 | server 		| Replies with information about the server | N/A
 
 ## Misc
-N/A
+| Command Name  | Description   | Aliases |
+| ------------- |-------------  |------------- |
+| say			| Replies with information about the bot | copycat, repeat, echo, parrot |
+| saywut		| Shows who used the say command last | saywat |
 
 ## Moderation
 N/A
