@@ -1,5 +1,5 @@
-const {Command} = require('awesome-commando');
-const MessageEmbed = require('awesome-djs');
+const { Command } = require('awesome-commando');
+const { MessageEmbed } = require('awesome-djs');
 const moment = require('moment');
 
 module.exports = class ServerCommand extends Command {
