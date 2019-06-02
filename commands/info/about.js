@@ -1,5 +1,5 @@
-const {Command} = require('awesome-commando');
-const MessageEmbed = require('awesome-djs');
+const { Command } = require('awesome-commando');
+const { MessageEmbed } = require('awesome-djs');
 
 module.exports = class AboutCommand extends Command {
   constructor (client) {
@@ -17,7 +17,7 @@ module.exports = class AboutCommand extends Command {
         .setColor(msg.member.displayHexColor)
         .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }))
         .addField('Owner', this.client.owners[0].tag, true)
-        .addField('License', 'MIT')
+        .addField('License', 'GPL-3.0')
         .addField('Source Code', 'https://github.com/KunoichiZ/PXR-Bot')
         .addField('Documentation', 'https://www.pxr-bot.kunoichiz.me/');
 
