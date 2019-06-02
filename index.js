@@ -15,14 +15,17 @@ const client = new Client({
 sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
   client.setProvider(new SQLiteProvider(db));
 });
+
 client.registry
   .registerDefaultTypes()
   .registerGroups([
     ['info', 'Information Commands'],
+    ['misc', 'Misc Commands'],
     ['moderation', 'Moderation Commands'],
     ['owner', 'Owner Commands'],
     ['pokemon', 'Pokemon Commands'],
     ['roles', 'Role Commands'],
+    ['rules', 'Rules Commands'],
     ['test', 'Test Commands']
   ])
   .registerDefaultGroups()
