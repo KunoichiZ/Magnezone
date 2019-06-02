@@ -22,6 +22,9 @@ Eval command description taken from the official discord.js-commando [documentat
 | prefix        | Shows the command prefix.      | N/A |
 | server 		| Replies with information about the server | N/A
 
+## Misc
+N/A
+
 ## Moderation
 N/A
 
@@ -47,6 +50,9 @@ N/A
 | Command Name          | Description   | Aliases |
 | ------------- |-------------  |------------- |
 | giverole      | Gives the user either the Writer, Artist, GCEA, RPer, Musician, Anime/Manga, Showdown, ASBer role | give |
+
+## Rules
+N/A
 
 ## Test
 | Command Name          | Description   | Aliases |
