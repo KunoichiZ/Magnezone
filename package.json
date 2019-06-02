@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/KunoichiZ/PXR-Bot.git",
   "author": "KunoichiZ",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
   "keywords": [
     "pxr",
