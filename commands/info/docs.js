@@ -1,5 +1,5 @@
-const {Command} = require('awesome-commando');
-const MessageEmbed = require('awesome-djs');
+const { Command } = require('awesome-commando');
+const { MessageEmbed } = require('awesome-djs');
 
 module.exports = class DocsCommand extends Command {
   constructor (client) {
