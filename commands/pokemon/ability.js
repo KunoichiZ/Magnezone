@@ -1,21 +1,12 @@
-const {Command} = require('awesome-commando');
-const MessageEmbed = require('awesome-djs');
+const { Command } = require('awesome-commando');
+const { MessageEmbed } = require('awesome-djs');
 const Fuse = require('fuse.js');
 var fs = require("fs");
 let abilities = JSON.parse(fs.readFileSync("./data/ability.json", "utf8"))
 
 var options = {
-    shouldSort: true,
-    threshold: 0.6,
-    location: 0,
-    distance: 100,
-    maxPatternLength: 32,
-    minMatchCharLength: 1,
-    keys: [
-      "name"
-    ]
-  };
-  
+  keys: ['name']
+}
 
 module.exports = class AbilityCommand extends Command {
   constructor (client) {
@@ -25,6 +16,7 @@ module.exports = class AbilityCommand extends Command {
       memberName: 'ability',
       description: 'Replies with a description of a Pokemon\'s ability.',
       examples: ['ability Aftermath'],
+      guildOnly: true,
       args: [
         {
             key: 'ability',
@@ -35,16 +27,15 @@ module.exports = class AbilityCommand extends Command {
     });
   }
 
-  run (msg) {
-    var fuse = new Fuse(abilities, options); // "list" is the item array
+  run (msg, {ability}) {
+    var fuse = new Fuse(abilities.abilities, options); 
     var result = fuse.search(ability);
-    console.log(result)
-    // const abilityEmbed = new MessageEmbed()
-    //     .setColor(msg.member.displayHexColor)
-    //     .setDescription(result)
-    //     // .setDescription(`${args.member.user.username}, you've been poked by ${msg.author.username}!`)
-    //     // .setImage(imgURLs[randomNum])
-    // msg.channel.send(abilityEmbed);
-    // return msg.say('Hi, I\'m awake!');
+
+    const abilityEmbed = new MessageEmbed()
+      .setColor(msg.member.displayHexColor)
+      .addField('Name', result[0].name)
+      .addField('Description', result[0].desc || result[0].shortDesc)
+        
+    return msg.channel.send(abilityEmbed);
   }
 };
