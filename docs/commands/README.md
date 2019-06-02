@@ -15,26 +15,33 @@ Eval command description taken from the official discord.js-commando [documentat
 ## Information
 | Command Name  | Description   | Aliases |
 | ------------- |-------------  |------------- |
-| help          | Displays a list of available commands, or detailed information for a specified command. | ??? |
-| ping          | Checks the bot's ping to the Discord server.     | ??? |
-| prefix        | Shows the command prefix.      | ??? |
+| about			| Replies with information about the bot | N/A |
+| docs			| Replies with a link to the bot's documentation | documentation |
+| help          | Displays a list of available commands, or detailed information for a specified command. | N/A |
+| ping          | Checks the bot's ping to the Discord server.     | N/A |
+| prefix        | Shows the command prefix.      | N/A |
+| server 		| Replies with information about the server | N/A
 
 ## Moderation
+N/A
 
 ## Owner
-
-
 | Command Name          | Description   | Aliases |
 | ------------- |-------------  |------------- |
-| announce      | Posts an announcement to the announcements channel.                   | ??? |
-| disable       | Disables a command or command group. | ??? |
-| enable        | Enables a command or command group.  | ??? |
-| eval          | The eval command will allow the bot owner to evaluate any JavaScript code, and display its result.      | ??? |
-| groups        | Shows all command groups.      | ??? |
-| load          | Shows all command groups      | ??? |
-| prefix        | Sets the command prefix.      | ??? |
-| reload        | Shows all command groups.      | ??? |
-| setusername   | Sets the username of the bot.  | ??? |
+| announce      | Posts an announcement to the announcements channel.                   | N/A |
+| disable       | Disables a command or command group. | N/A |
+| enable        | Enables a command or command group.  | N/A |
+| eval          | The eval command will allow the bot owner to evaluate any JavaScript code, and display its result.      | N/A |
+| groups        | Shows all command groups.      | N/A |
+| load          | Shows all command groups      | N/A |
+| prefix        | Sets the command prefix.      | N/A |
+| reload        | Shows all command groups.      | N/A |
+| setusername   | Sets the username of the bot.  | setun |
+
+## Pokemon
+| Command Name | Description   | Aliases |
+| ------------- |-------------  |------------- |
+| ability      | Replies with a description of a Pokemon's ability. | N/A |
 
 ## Roles
 | Command Name          | Description   | Aliases |
