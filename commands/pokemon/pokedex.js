@@ -37,15 +37,17 @@ module.exports = class AbilityCommand extends Command {
   }
 
   
-  run (msg, {pokemon}) {
+  run (msg, { pokemon }) {
+    // fuse.js
     var pokemonFuse = new Fuse(pokedex.pokedex, dexOptions); 
     var result = pokemonFuse.search(pokemon);
-
     var entriesFuse = new Fuse(dexEntries.entries, entOptions);
     var entResult = entriesFuse.search(result[0].species);
 
+    // get color from file
     var color = result[0].color;
 
+    // determine embed color
     function getColor(color) {
         switch (color) {
             case 'Black':
@@ -73,10 +75,11 @@ module.exports = class AbilityCommand extends Command {
         }
       }
 
-    
+    // convert height and weight to ft and lb
     var heightFt = result[0].heightm * 3.2808;
     var weightLb = result[0].weightkg * 2.2046;
 
+    // start pokeData
     const pokeData = {
         species: '',
         abilities: '',
@@ -96,6 +99,7 @@ module.exports = class AbilityCommand extends Command {
         }
     }
 
+    // assign base stats
     var hp, atk, def, spa, spd, spe;
     hp = result[0].baseStats.hp;
     atk = result[0].baseStats.atk;
@@ -119,6 +123,7 @@ module.exports = class AbilityCommand extends Command {
     //         break;
     // }
 
+    // determine gender ratio
     if (result[0].genderRatio) {
         pokeData.genders = `${result[0].genderRatio.M * 100}% ♂ | ${result[0]
             .genderRatio.F * 100}% ♀`;
@@ -128,13 +133,14 @@ module.exports = class AbilityCommand extends Command {
     if(result[0].prevo) {
         pokeData.prevos = result[0].prevo;
     }
-
     if(result[0].evos) {
         pokeData.evos = result[0].evos;
     }
 
+    // assign the species to a variables
     var species = result[0].species.toLowerCase();
 
+    // embed everything
     const pokedexEmbed = new MessageEmbed()
       .setColor(getColor(color))
       .setThumbnail(`https://play.pokemonshowdown.com/sprites/xyani/${species}.gif`)
@@ -159,6 +165,7 @@ module.exports = class AbilityCommand extends Command {
       pokedexEmbed.addField('Egg Groups', result[0].eggGroups.join(', '), true)
       pokedexEmbed.addField('Pokedex Data', entResult[0].desc)
         
+    // send the embed  
     return msg.channel.send(pokedexEmbed);
   }
 };
