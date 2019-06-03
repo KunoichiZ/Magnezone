@@ -29,14 +29,14 @@ module.exports = class BanCommand extends Command {
   run (msg, { member }, { reason }) {
     if (member.id === msg.author.id) return msg.reply('I don\'t think you want to ban yourself.');
     if (!member.bannable) return msg.reply('I cannot ban that member, their role is probably higher than my own!');
-    const user = msg.mentions.users.first();
-    msg.guild.ban(user);
+    // const user = msg.mentions.users.first();
+    member.ban(reason !== '' ? reason : 'No reason given by staff');
 
     const banEmbed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
         .setDescription(`
-          **Member:** ${member.user.tag} (${member.id})
-          **Action:** Ban
+          **Member:** ${member.user.tag} (${member.id})\n
+          **Action:** Ban\n
           **Reason:** ${reason !== '' ? reason : 'No reason given by staff'}`
         )
     return msg.channel.send(banEmbed);
