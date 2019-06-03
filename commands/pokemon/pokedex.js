@@ -143,9 +143,8 @@ module.exports = class AbilityCommand extends Command {
     // embed everything
     const pokedexEmbed = new MessageEmbed()
       .setColor(getColor(color))
+      .setTitle('#' + result[0].num + ' - ' + result[0].species)
       .setThumbnail(`https://play.pokemonshowdown.com/sprites/xyani/${species}.gif`)
-      .addField('Name', result[0].species)
-      .addField('Pokedex Number', result[0].num, true)
       .addField('Types', result[0].types.join(', '), true)
       .addField('Gender', pokeData.genders, true)
       .addField('Base Stats', 'HP: ' + `**${hp}**` + ', ATK: ' + `**${atk}**` + ', DEF: ' + `**${def}**` + ', SPA: ' + `**${spa}**` + ', SPDEF: ' + `**${spd}**` + ', SPEED: ' + `**${spe}**`)
