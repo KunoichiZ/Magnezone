@@ -5,9 +5,14 @@ const { MessageEmbed } = require('awesome-djs');
 const Fuse = require('fuse.js');
 var fs = require("fs");
 let pokedex = JSON.parse(fs.readFileSync("./data/pokedex.json", "utf8"))
+let dexEntries = JSON.parse(fs.readFileSync("./data/dexEntries.json", "utf8"))
 
-var options = {
+var dexOptions = {
   keys: ['species']
+}
+
+var entOptions = {
+    keys: ['species']
 }
 
 module.exports = class AbilityCommand extends Command {
@@ -32,11 +37,13 @@ module.exports = class AbilityCommand extends Command {
 
   
   run (msg, {pokemon}) {
-    var fuse = new Fuse(pokedex.pokedex, options); 
-    var result = fuse.search(pokemon);
-    var color = result[0].color;
+    var pokemonFuse = new Fuse(pokedex.pokedex, dexOptions); 
+    var result = pokemonFuse.search(pokemon);
 
-    // console.log(result)
+    var entriesFuse = new Fuse(dexEntries.entries, entOptions);
+    var entResult = entriesFuse.search(result[0].species);
+
+    var color = result[0].color;
 
     function getColor(color) {
         switch (color) {
@@ -65,52 +72,89 @@ module.exports = class AbilityCommand extends Command {
         }
       }
 
-    // "num": 2,
-    //     "species": "Ivysaur",
-    //     "types": ["Grass", "Poison"],
-    //     "genderRatio": { "M": 0.875, "F": 0.125 },
-    //     "baseStats": { "hp": 60, "atk": 62, "def": 63, "spa": 80, "spd": 80, "spe": 60 },
-    //     "abilities": { "0": "Overgrow", "H": "Chlorophyll" },
-    //     "heightm": 1,
-    //     "weightkg": 13,
-    //     "color": "'Green'",
-    //     "prevo": "bulbasaur",
-    //     "evos": ["venusaur"],
-    //     "evoLevel": 16,
-    //     "eggGroups": ["Monster", "Grass"]
+    
     var heightFt = result[0].heightm * 3.2808;
     var weightLb = result[0].weightkg * 2.2046;
 
     const pokeData = {
-        abilities: {},
+        species: '',
+        abilities: '',
         evos: '',
+        prevos: '',
         genders: ''
     }
     
     // get abilities
-    pokeData.abilities[0] = result[0].abilities[0];
-    if(result[0].abilities[1]) {
-        pokeData.abilities[1] = result[0].abilities[1];
+    for (const ability in result[0].abilities) {
+        if (ability === '0') {
+            pokeData.abilities += `${result[0].abilities[ability]}`;
+        } else if (ability === 'H') {
+            pokeData.abilities += `, *${result[0].abilities[ability]}*`;
+        } else {
+            pokeData.abilities += `, ${[result[0]].abilities[ability]}`;
+        }
     }
-    if(result[0].abilities[2]) {
-        pokeData.abilities[2] = result[0].abilities[2];
-    }
-    // console.log(pokeData.abilities)
 
+    var hp, atk, def, spa, spd, spe;
+    hp = result[0].baseStats.hp;
+    atk = result[0].baseStats.atk;
+    def = result[0].baseStats.def;
+    spa = result[0].baseStats.spa;
+    spd = result[0].baseStats.spd;
+    spe = result[0].baseStats.spe;
+
+    // switch (result[0].gender) {
+    //     case 'N':
+    //         pokeData.genders = 'None';
+    //         break;
+    //     case 'M':
+    //         pokeData.genders = '100% ♂';
+    //         break;
+    //     case 'F':
+    //         pokeData.genders = '100% ♀';
+    //         break;
+    //     default:
+    //         pokeData.genders = '50% ♂ | 50% ♀';
+    //         break;
+    // }
+
+    if (result[0].genderRatio) {
+        pokeData.genders = `${result[0].genderRatio.M * 100}% ♂ | ${result[0]
+            .genderRatio.F * 100}% ♀`;
+    }
+
+    // get evolutions
+    if(result[0].prevo) {
+        pokeData.prevos = result[0].prevo;
+    }
+
+    if(result[0].evos) {
+        pokeData.evos = result[0].evos;
+    }
+    
     const pokedexEmbed = new MessageEmbed()
       .setColor(getColor(color))
+      // .setThumbnail('https://i.imgur.com/wSTFkRM.png')
       .addField('Name', result[0].species)
-      .addField('Pokedex Number', result[0].num)
-      .addField('Height', result[0].heightm + ' (' + heightFt + ' ft)', true)
-      .addField('Weight', result[0].weightkg + ' (' + weightLb + ' lbs)')
-    if(result[0].abilities[0]) {
-        pokedexEmbed.addField('Ability', result[0].abilities[0])
-    } else if(result[0].abilities[0] && result[0].abilities[1]) {
-        pokedexEmbed.addField('Abilities', result[0].abilities[0] + ', ' + result[0].abilities[1])
+      .addField('Pokedex Number', result[0].num, true)
+      .addField('Types', result[0].types.join(', '), true)
+      .addField('Gender', pokeData.genders, true)
+      .addField('Base Stats', 'HP: ' + `**${hp}**` + ', ATK: ' + `**${atk}**` + ', DEF: ' + `**${def}**` + ', SPA: ' + `**${spa}**` + ', SPDEF: ' + `**${spd}**` + ', SPEED: ' + `**${spe}**`)
+      .addField('Height', result[0].heightm + ' m (' + heightFt + ' ft)', true)
+      .addField('Weight', result[0].weightkg + ' kg (' + weightLb + ' lbs)', true)
+      .addField('Abilities', pokeData.abilities, true)
+    if(result[0].prevo) {
+        pokedexEmbed.addField('Pre-Evolution', pokeData.prevos, true)
     }
+    if(result[0].evos) {
+        pokedexEmbed.addField('Evolution', pokeData.evos, true)
+    }
+      // evos
     if(result[0].evoLevel) {
-        pokedexEmbed.addField('Evolution Level', result[0].evoLevel)
+        pokedexEmbed.addField('Evolution Level', result[0].evoLevel, true)
     }
+      pokedexEmbed.addField('Egg Groups', result[0].eggGroups.join(', '), true)
+    //   pokedexEmbed.addField('Pokedex Data', entResult[0].desc)
         
     return msg.channel.send(pokedexEmbed);
   }
