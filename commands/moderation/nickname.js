@@ -1,7 +1,7 @@
 const {Command} = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
 
-module.exports = class WarnCommand extends Command {
+module.exports = class NicknameCommand extends Command {
   constructor (client) {
     super(client, {
       name: 'nickname',
