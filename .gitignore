@@ -16,8 +16,5 @@ data/.env
 
 .DS_Store
 
-# Pokemon folder in images
-images/Pokemon
-
 # data
 data/sample.json
