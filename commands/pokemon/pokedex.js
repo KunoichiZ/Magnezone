@@ -143,8 +143,8 @@ module.exports = class AbilityCommand extends Command {
       .addField('Types', result[0].types.join(', '), true)
       .addField('Gender', pokeData.genders, true)
       .addField('Base Stats', 'HP: ' + `**${hp}**` + ', ATK: ' + `**${atk}**` + ', DEF: ' + `**${def}**` + ', SPA: ' + `**${spa}**` + ', SPDEF: ' + `**${spd}**` + ', SPEED: ' + `**${spe}**`)
-      .addField('Height', result[0].heightm + ' m (' + heightFt + ' ft)', true)
-      .addField('Weight', result[0].weightkg + ' kg (' + weightLb + ' lbs)', true)
+      .addField('Height', result[0].heightm + ' m (' + heightFt.toFixed(2) + ' ft)', true)
+      .addField('Weight', result[0].weightkg + ' kg (' + weightLb.toFixed(2) + ' lbs)', true)
       .addField('Abilities', pokeData.abilities, true)
     if(result[0].prevo) {
         pokedexEmbed.addField('Pre-Evolution', pokeData.prevos, true)
