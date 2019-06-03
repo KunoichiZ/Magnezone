@@ -16,7 +16,7 @@ module.exports = class Rule2Command extends Command {
   run (msg) {
     const r2Embed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
-        .addField('Rule 3', 'Please use appropriate channels. Using commands should happen in <#419672986669547540>, for example.')
+        .addField('Rule 2', 'Please use appropriate channels. Using commands should happen in <#419672986669547540>, for example.')
     return msg.channel.send(r2Embed);
   }
 };
