@@ -28,6 +28,7 @@ module.exports = class AbilityCommand extends Command {
   }
 
   run (msg, {ability}) {
+    // fuse.js
     var fuse = new Fuse(abilities.abilities, options); 
     var result = fuse.search(ability);
 
