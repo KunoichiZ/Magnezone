@@ -1,6 +1,6 @@
 const { Command } = require('awesome-commando');
 
-module.exports = class AboutCommand extends Command {
+module.exports = class InviteCommand extends Command {
   constructor (client) {
     super(client, {
       name: 'invite',
