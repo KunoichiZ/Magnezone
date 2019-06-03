@@ -15,6 +15,7 @@ var entOptions = {
     keys: ['species']
 }
 
+
 module.exports = class AbilityCommand extends Command {
   constructor (client) {
     super(client, {
@@ -131,10 +132,12 @@ module.exports = class AbilityCommand extends Command {
     if(result[0].evos) {
         pokeData.evos = result[0].evos;
     }
-    
+
+    var species = result[0].species.toLowerCase();
+
     const pokedexEmbed = new MessageEmbed()
       .setColor(getColor(color))
-      // .setThumbnail('https://i.imgur.com/wSTFkRM.png')
+      .setThumbnail(`https://play.pokemonshowdown.com/sprites/xyani/${species}.gif`)
       .addField('Name', result[0].species)
       .addField('Pokedex Number', result[0].num, true)
       .addField('Types', result[0].types.join(', '), true)
@@ -154,7 +157,7 @@ module.exports = class AbilityCommand extends Command {
         pokedexEmbed.addField('Evolution Level', result[0].evoLevel, true)
     }
       pokedexEmbed.addField('Egg Groups', result[0].eggGroups.join(', '), true)
-    //   pokedexEmbed.addField('Pokedex Data', entResult[0].desc)
+      pokedexEmbed.addField('Pokedex Data', entResult[0].desc)
         
     return msg.channel.send(pokedexEmbed);
   }
