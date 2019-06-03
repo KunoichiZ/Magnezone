@@ -8,7 +8,7 @@ module.exports = class MuteCommand extends Command {
       aliases: ['m'],
       group: 'moderation',
       memberName: 'mute',
-      description: 'Mutes the seected member',
+      description: 'Mutes the seected member for the desired amount of time',
       guildOnly: true,
       userPermissions: ['MANAGE_ROLES_OR_PERMISSIONS'],
       examples: ['mute AinoAlt 2h'],
