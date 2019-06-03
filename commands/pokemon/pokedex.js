@@ -13,7 +13,7 @@ var entOptions = {
     keys: ['species']
 }
 
-module.exports = class AbilityCommand extends Command {
+module.exports = class PokedexCommand extends Command {
   constructor (client) {
     super(client, {
       name: 'pokedex',
