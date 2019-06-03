@@ -9,7 +9,7 @@ module.exports = class BanCommand extends Command {
       group: 'moderation',
       memberName: 'ban',
       description: 'Bans a member from the server',
-      examples: ['ban AinoAlt'],
+      examples: ['ban AinoAlt annoying'],
       args: [
         {
             key: 'member',
