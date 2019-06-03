@@ -10,19 +10,21 @@ module.exports = class BanCommand extends Command {
       memberName: 'ban',
       description: 'Bans a member from the server',
       examples: ['ban AinoAlt annoying'],
+      userPermissions: ['BAN_MEMBERS'],
+      guildOnly: true,
       args: [
         {
             key: 'member',
             prompt: 'Which member should I ban?',
-            type: 'member',
+            type: 'member'
         },
         {
             key: 'reason',
             prompt: 'What is the reason for this banishment?',
             type: 'string',
-            default: '',
+            default: ''
         }
-    ],
+      ]
     });
   }
 
