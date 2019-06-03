@@ -1,5 +1,3 @@
-// lb=kg*2.2046 (kg to pounds)
-// ft=m*3.2808 (meters to ft)
 const { Command } = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
 const Fuse = require('fuse.js');
@@ -14,7 +12,6 @@ var dexOptions = {
 var entOptions = {
     keys: ['species']
 }
-
 
 module.exports = class AbilityCommand extends Command {
   constructor (client) {
