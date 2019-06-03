@@ -30,12 +30,21 @@ Eval command description taken from the official discord.js-commando [documentat
 | saywut		| Shows who used the say command last | saywat |
 
 ## Moderation
-N/A
+| Command Name          | Description   | Aliases |
+| ------------- |-------------  |------------- |
+| ban      | Bans a member from the server | b |
+| kick      | Kicks a member from the server | k |
+| lockdown 	| Locks down the channel | ld, lock |
+| mute		| Mutes the seected member for the desired amount of time | m |
+| nickname      | Nicknames the selected member with the provided nickname | nick, n |
+| unlock      | Unlocks the channel | ul |
+| unmute	| Unmutes the selected member | um |
+| warn      | Warns the selected member with the desired points | w |
 
 ## Owner
 | Command Name          | Description   | Aliases |
 | ------------- |-------------  |------------- |
-| announce      | Posts an announcement to the announcements channel.                   | N/A |
+| announce      | Posts an announcement to the discord-announcements channel.                   | N/A |
 | disable       | Disables a command or command group. | N/A |
 | enable        | Enables a command or command group.  | N/A |
 | eval          | The eval command will allow the bot owner to evaluate any JavaScript code, and display its result.      | N/A |
@@ -43,12 +52,14 @@ N/A
 | load          | Shows all command groups      | N/A |
 | prefix        | Sets the command prefix.      | N/A |
 | reload        | Shows all command groups.      | N/A |
+| setusername   | Sets the avatar of the bot.  | setava |
 | setusername   | Sets the username of the bot.  | setun |
 
 ## Pokemon
 | Command Name | Description   | Aliases |
 | ------------- |-------------  |------------- |
 | ability      | Replies with a description of a Pokemon's ability. | N/A |
+| pokedex	   | Replies with information about a Pokemon | dex |
 
 ## Roles
 | Command Name          | Description   | Aliases |
@@ -56,7 +67,14 @@ N/A
 | giverole      | Gives the user either the Writer, Artist, GCEA, RPer, Musician, Anime/Manga, Showdown, ASBer role | give |
 
 ## Rules
-N/A
+| Command Name          | Description   | Aliases |
+| ------------- |-------------  |------------- |
+| r1      | Replies with the first rule of the server | rule1 |
+| r2      | Replies with the second rule of the server | rule2 |
+| r3      | Replies with the third rule of the server | rule3 |
+| r4      | Replies with the fourth rule of the server | rule4 |
+| r5      | Replies with the fifth rule of the server | rule5 |
+
 
 ## Test
 | Command Name          | Description   | Aliases |
