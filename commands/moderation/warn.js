@@ -8,7 +8,7 @@ module.exports = class WarnCommand extends Command {
       aliases: ['w'],
       group: 'moderation',
       memberName: 'warn',
-      description: 'Warns the selected member',
+      description: 'Warns the selected member with the desired points',
       examples: ['warn AinoAlt 1 annoying'],
       guildOnly: true,
       throttling: {
