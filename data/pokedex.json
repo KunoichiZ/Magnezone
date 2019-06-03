@@ -9,7 +9,7 @@
         "heightm": 0.7,
         "weightkg": 6.9,
         "color": "Green",
-        "evos": ["ivysaur"],
+        "evos": ["Ivysaur"],
         "eggGroups": ["Monster", "Grass"]
     },
     {
@@ -22,8 +22,8 @@
         "heightm": 1,
         "weightkg": 13,
         "color": "Green",
-        "prevo": "bulbasaur",
-        "evos": ["venusaur"],
+        "prevo": "Bulbasaur",
+        "evos": ["Venusaur"],
         "evoLevel": 16,
         "eggGroups": ["Monster", "Grass"]
     }
