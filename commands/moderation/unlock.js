@@ -8,7 +8,7 @@ module.exports = class UnlockCommand extends Command {
       aliases: ['ul'],
       group: 'moderation',
       memberName: 'unlock',
-      description: 'Unlock the channel',
+      description: 'Unlocks the channel',
       guildOnly: true,
       userPermissions: ['MANAGE_CHANNELS'],
       clientPermissions: ['MANAGE_CHANNELS'],
