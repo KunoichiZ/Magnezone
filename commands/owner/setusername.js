@@ -8,7 +8,7 @@ module.exports = class SetUsernameCommand extends Command {
       group: 'owner',
       memberName: 'setusername',
       description: 'Sets the username of the bot.',
-      examples: ['setusername'],
+      examples: ['setusername PXR'],
       guildOnly: true,
       ownerOnly: true,
       args: [
@@ -16,7 +16,7 @@ module.exports = class SetUsernameCommand extends Command {
           key: 'username',
           prompt: 'What username to set?',
           type: 'string',
-          default: 'Fuguri'
+          default: 'Officer Magnezone'
         }
       ]
     });
