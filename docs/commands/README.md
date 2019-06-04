@@ -52,7 +52,7 @@ Eval command description taken from the official discord.js-commando [documentat
 | load          | Shows all command groups      | N/A |
 | prefix        | Sets the command prefix.      | N/A |
 | reload        | Shows all command groups.      | N/A |
-| setusername   | Sets the avatar of the bot.  | setava |
+| setavatar   | Sets the avatar of the bot.  | setava |
 | setusername   | Sets the username of the bot.  | setun |
 
 ## Pokemon
