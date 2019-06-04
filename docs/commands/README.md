@@ -75,7 +75,6 @@ Eval command description taken from the official discord.js-commando [documentat
 | r4      | Replies with the fourth rule of the server | rule4 |
 | r5      | Replies with the fifth rule of the server | rule5 |
 
-
 ## Test
 | Command Name          | Description   | Aliases |
 | ------------- |-------------  |------------- |
