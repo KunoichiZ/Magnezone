@@ -10,7 +10,7 @@ module.exports = class UnmuteCommand extends Command {
       memberName: 'unmute',
       description: 'Unmutes the selected member',
       examples: ['unmute AinoAlt'],
-      userPermissions: ['MANAGE_ROLES_OR_PERMISSIONS'],
+      userPermissions: ['MANAGE_ROLES'],
       guildOnly: true,
       args: [
         {
@@ -22,7 +22,18 @@ module.exports = class UnmuteCommand extends Command {
     });
   }
 
-  run (msg) {
-    
+  run (msg, { member }) {
+    if(member.manageable) {
+      const muteRole = msg.guild.roles.find(role => role.name === "Muted");
+  
+      member.roles.remove(muteRole);
+  
+      const unmuteEmbed = new MessageEmbed()
+        .setColor(msg.member.displayHexColor)
+        .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
+        .setDescription(`**Action:** Unmuted <@${member.id}>`);
+
+      return msg.channel.send(unmuteEmbed);
+    }
   }
 };
