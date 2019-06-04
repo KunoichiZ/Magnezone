@@ -1,9 +1,9 @@
 {
-  "name": "pxr-bot",
+  "name": "magnezone",
   "version": "0.0.0",
-  "description": "Discord bot for PXR Discord Server",
+  "description": "Discord bot for Pokemon Crossroads Discord Server",
   "main": "index.js",
-  "repository": "https://github.com/KunoichiZ/PXR-Bot.git",
+  "repository": "https://github.com/KunoichiZ/Magnezone.git",
   "author": "KunoichiZ",
   "license": "GPL-3.0",
   "private": true,
@@ -13,10 +13,11 @@
     "discordjs",
     "discord",
     "discord.js-commando",
-    "pokemon-crossroads"
+    "pokemon-crossroads",
+    "officer-magnezone"
   ],
   "bugs": {
-    "url": "https://github.com/KunoichiZ/PXR-Bot/issues"
+    "url": "https://github.com/KunoichiZ/Magnezone/issues"
   },
   "scripts": {
     "test": "node index.js",
@@ -32,7 +33,7 @@
     "eslint": "^5.16.0",
     "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
-    "moment-duration-format": "^2.2.2",
+    "moment-duration-format": "^2.3.0",
     "sqlite": "^3.0.3"
   },
   "devDependencies": {

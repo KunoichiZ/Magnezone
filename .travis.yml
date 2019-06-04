@@ -12,6 +12,6 @@ deploy:
   on:
         branch: master
   local_dir: docs/.vuepress/dist
-  repo: KunoichiZ/PXR-Bot
+  repo: KunoichiZ/Magnezone
   keep-history: true
   target-branch: gh-pages

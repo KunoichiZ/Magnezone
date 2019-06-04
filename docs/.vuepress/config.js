@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'PXR Discord Bot',
-		description: 'Documentation for the PXR Discord Bot',
+    title: 'Officer Magnezone',
+		description: 'Documentation for the Pokemon Crossroads (PXR) Discord Bot',
 		head: [
 			['link', { rel: 'icon', href: '/logo.png' }]
 		],
@@ -10,8 +10,8 @@ module.exports = {
 			yuu: {
 				colorThemes: ['blue', 'red']
 			},
-			repo: 'KunoichiZ/PXR-Bot',
-			base: '/PXR-Bot/',
+			repo: 'KunoichiZ/Magnezone',
+			base: '/Magnezone/',
 			docsDir: 'docs',
 			sidebarDepth: 3,
 			editLinks: true,
