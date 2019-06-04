@@ -8,33 +8,20 @@ module.exports = class GiveRoleCommand extends Command {
             aliases: ['give'],
             group: 'roles',
             memberName: 'giverole',
-            description: 'Gives the user either the Writer, Artist, GCEA, RPer, Musician, Anime/Manga, Showdown, ASBer role',
+            description: 'Gives the user either the Writer, Artist, GCEA, RPer, Musician, Showdown, ASBer role',
             examples: ['giverole Artist'],
             guildOnly: true,
             args: [
                 {
                     key: 'role',
-                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEA`, `RPer`, `Musician`, `Anime/Manga`, `Showdown`, `ASBer`',
+                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEAer`, `Role Player`, `Musician`, `Showdown`, `ASBer`',
                     type: 'string'
                 }
             ]
         });
     }
 
-    /*hasPermission (msg) {
-        return msg.member.hasPermission('MANAGE_ROLES');
-    }*/
-
     run(msg, { role }) {
-        
-        //const foundMember = msg.guild.members.find(member => member.id === msg.author.id);
-
-        
-        /*const artistRole = msg.guild.roles.find("name", "Artist");
-        const writerRole = msg.guild.roles.find("name", "Writer");
-        const gceaerRole = msg.guild.roles.find("name", "GCEAer");
-        const asberRole = msg.guild.roles.find("name", "ASBer");
-        const roleplayerRole = msg.guild.roles.find("name", "Role Player");*/
                     
         if(role === "Artist") {
             const artistRole = msg.guild.roles.find(roles => roles.name === role);
@@ -92,14 +79,6 @@ module.exports = class GiveRoleCommand extends Command {
                 msg.member.roles.add(showdownRole).catch(console.error);
                 msg.channel.send("You've been given the `Showdown` role!");
             }
-        } else if(role === "Anime" || role === "Manga") {
-            const aniMangaRole = msg.guild.roles.find(roles => roles.name === role);
-            if(msg.member.roles.has(aniMangaRole.id)) {
-                msg.channel.send("You already have the `Anime/Manga` role!");
-            } else {
-                msg.member.roles.add(aniMangaRole).catch(console.error);
-                msg.channel.send("You've been given the `Anime/Manga` role!");
-            }
-        }
+        } 
     }
 };
