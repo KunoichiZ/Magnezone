@@ -8,13 +8,14 @@
   "license": "GPL-3.0",
   "private": true,
   "keywords": [
-    "pxr",
-    "discord-bot",
-    "discordjs",
     "discord",
+    "discordjs",
+    "discord-bot",
     "discord.js-commando",
+    "magnezone",
+    "officer-magnezone",
     "pokemon-crossroads",
-    "officer-magnezone"
+    "pxr"
   ],
   "bugs": {
     "url": "https://github.com/KunoichiZ/Magnezone/issues"
