@@ -9,7 +9,8 @@ module.exports = class Rule2Command extends Command {
       group: 'rules',
       memberName: 'r2',
       description: 'Replies with the second rule of the server',
-      examples: ['r2']
+      examples: ['r2'],
+      guildOnly: true
     });
   }
 

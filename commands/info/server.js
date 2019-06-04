@@ -9,7 +9,8 @@ module.exports = class ServerCommand extends Command {
       group: 'info',
       memberName: 'server',
       description: 'Replies with information about the server',
-      examples: ['server']
+      examples: ['server'],
+      guildOnly: true
     });
   }
 

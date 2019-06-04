@@ -8,7 +8,8 @@ module.exports = class Rule1Command extends Command {
       group: 'rules',
       memberName: 'r1',
       description: 'Replies with the first rule of the server',
-      examples: ['r1']
+      examples: ['r1'],
+      guildOnly: true
     });
   }
 

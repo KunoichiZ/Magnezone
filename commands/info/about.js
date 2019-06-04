@@ -8,7 +8,8 @@ module.exports = class AboutCommand extends Command {
       group: 'info',
       memberName: 'about',
       description: 'Replies with information about the bot',
-      examples: ['about']
+      examples: ['about'],
+      guildOnly: true
     });
   }
 

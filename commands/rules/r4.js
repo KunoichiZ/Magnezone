@@ -9,7 +9,8 @@ module.exports = class Rule4Command extends Command {
       group: 'rules',
       memberName: 'r4',
       description: 'Replies with the fourth rule of the server',
-      examples: ['r4']
+      examples: ['r4'],
+      guildOnly: true
     });
   }
 

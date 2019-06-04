@@ -7,7 +7,8 @@ module.exports = class ReplyCommand extends Command {
       group: 'test',
       memberName: 'reply',
       description: 'Replies with a message.',
-      examples: ['reply']
+      examples: ['reply'],
+      guildOnly: true
     });
   }
 

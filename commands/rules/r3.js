@@ -9,7 +9,8 @@ module.exports = class Rule3Command extends Command {
       group: 'rules',
       memberName: 'r3',
       description: 'Replies with the third rule of the server',
-      examples: ['r3']
+      examples: ['r3'],
+      guildOnly: true
     });
   }
 

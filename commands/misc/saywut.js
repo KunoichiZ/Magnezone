@@ -11,6 +11,7 @@ module.exports = class ServerCommand extends Command {
         memberName: 'saywut',
         description: 'Shows who used the say command last',
         examples: ['saywut'],
+        guildOnly: true,
         throttling: {
           usages: 2,
           duration: 10

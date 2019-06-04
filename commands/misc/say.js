@@ -11,6 +11,7 @@ module.exports = class ServerCommand extends Command {
       memberName: 'say',
       description: 'Replies with the text you provide',
       examples: ['say Hi there!'],
+      guildOnly: true,
       throttling: {
         usages: 2,
         duration: 10

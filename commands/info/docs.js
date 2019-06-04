@@ -9,7 +9,8 @@ module.exports = class DocsCommand extends Command {
       group: 'info',
       memberName: 'docs',
       description: 'Replies with a link to the bot\'s documentation',
-      examples: ['docs']
+      examples: ['docs'],
+      guildOnly: true
     });
   }
 

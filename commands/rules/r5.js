@@ -9,7 +9,8 @@ module.exports = class Rule5Command extends Command {
       group: 'rules',
       memberName: 'r5',
       description: 'Replies with the fifth rule of the server',
-      examples: ['r5']
+      examples: ['r5'],
+      guildOnly: true
     });
   }
 
