@@ -18,7 +18,7 @@ module.exports = {
 			nav: [
       	{ text: 'Home', link: '/' },
       	{ text: 'Commands', link: '/commands/' },
-      	{ text: 'PXR Discord Server', link: 'https://discord.gg/VE7SSpp' }
+      	{ text: 'PXR Discord Server', link: 'https://discord.gg/uxMSGK' }
     	]
 		},
 		lastUpdated: true
