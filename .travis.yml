@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install -g vuepress
 script:
-  - vuepress build && cd docs/.vuepress/dist && echo 'www.pxr-bot.kunoichiz.me' > CNAME
+  - vuepress build && cd docs/.vuepress/dist && echo 'www.magnezone.kunoichiz.me' > CNAME
 deploy:
   provider: pages
   skip-cleanup: true
