@@ -16,7 +16,7 @@ module.exports = class DocsCommand extends Command {
   run (msg) {
     const docsEmbed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
-        .addField('PXR Discord Bot Documentation', 'https://www.pxr-bot.kunoichiz.me/');
+        .addField('Officer Magnezone\'s Documentation', 'https://www.magnezone.kunoichiz.me/');
         
     return msg.channel.send(docsEmbed);
   }

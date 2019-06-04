@@ -18,8 +18,8 @@ module.exports = class AboutCommand extends Command {
         .setAuthor(`${this.client.user.username} Stats`, this.client.user.displayAvatarURL({ format: 'png' }))
         .addField('Owner', this.client.owners[0].tag, true)
         .addField('License', 'GPL-3.0')
-        .addField('Source Code', 'https://github.com/KunoichiZ/PXR-Bot')
-        .addField('Documentation', 'https://www.pxr-bot.kunoichiz.me/');
+        .addField('Source Code', 'https://github.com/KunoichiZ/Magnezone')
+        .addField('Documentation', 'https://www.magnezone.kunoichiz.me/');
 
     return msg.channel.send(aboutEmbed);
   }
