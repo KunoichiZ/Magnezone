@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/KunoichiZ/Magnezone.svg?token=qTv7Q7cSefqCStMArFcA&branch=master)](https://travis-ci.com/KunoichiZ/Magnezone) ![Travis (.com)](https://img.shields.io/travis/com/KunoichiZ/Magnezone.svg?logo=travis) ![Website](https://img.shields.io/website/https/www.magnezone.kunoichiz.me.svg?label=documentation&logo=vue.js) [![Depfu](https://badges.depfu.com/badges/50387fc63aa606a42520f049541a0e65/overview.svg)](https://depfu.com/repos/KunoichiZ/Magnezone?project_id=8179) ![GitHub](https://img.shields.io/github/license/KunoichiZ/Magnezone.svg)
+[![Build Status](https://travis-ci.com/KunoichiZ/PXR-Bot.svg?token=qTv7Q7cSefqCStMArFcA&branch=master)](https://travis-ci.com/KunoichiZ/PXR-Bot) ![Website](https://img.shields.io/website/https/www.magnezone.kunoichiz.me.svg?label=documentation&logo=vue.js) [![Depfu](https://badges.depfu.com/badges/50387fc63aa606a42520f049541a0e65/overview.svg)](https://depfu.com/repos/KunoichiZ/Magnezone?project_id=8179) ![GitHub](https://img.shields.io/github/license/KunoichiZ/Magnezone.svg)
 
 # Officer Magnezone
 Discord bot for the Pokemon Crossroads Discord Channel
