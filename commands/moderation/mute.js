@@ -12,7 +12,7 @@ module.exports = class MuteCommand extends Command {
       description: 'Mutes the selected member for the desired amount of time',
       guildOnly: true,
       userPermissions: ['MANAGE_ROLES'],
-      examples: ['mute AinoAlt 2h'],
+      examples: ['mute AinoAlt 2hrs'],
       args: [
         {
             key: 'member',
