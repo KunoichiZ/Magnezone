@@ -29,7 +29,7 @@ module.exports = class MuteCommand extends Command {
     });
   }
 
-  run (msg, { member, duration }) {
+  async run (msg, { member, duration }) {
     if(member.manageable) {
       const muteRole = msg.guild.roles.find(role => role.name === "Muted");
 
