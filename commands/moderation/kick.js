@@ -43,6 +43,10 @@ module.exports = class KickCommand extends Command {
           **Action:** Kick\n
           **Reason:** ${reason !== '' ? reason : 'No reason given by staff'}`
         )
-    return msg.channel.send(kickEmbed);
+
+    const modlogsChannel = this.client.channels.get('585656872355364864');
+    modlogsChannel.send(kickEmbed);
+
+    // return msg.channel.send(kickEmbed);
   }
 };

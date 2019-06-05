@@ -33,7 +33,10 @@ module.exports = class UnmuteCommand extends Command {
         .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
         .setDescription(`**Action:** Unmuted <@${member.id}>`);
 
-      return msg.channel.send(unmuteEmbed);
+      const modlogsChannel = this.client.channels.get('585656872355364864');
+       modlogsChannel.send(unmuteEmbed);
+
+      // return msg.channel.send(unmuteEmbed);
     }
   }
 };

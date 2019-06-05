@@ -70,7 +70,10 @@ module.exports = class MuteCommand extends Command {
         }
       }
       
-      return msg.channel.send(muteEmbed);
+      const modlogsChannel = this.client.channels.get('585656872355364864');
+      modlogsChannel.send(muteEmbed);
+      
+      // return msg.channel.send(muteEmbed);
     }
   }
 };

@@ -40,7 +40,11 @@ module.exports = class BanCommand extends Command {
           **Member:** ${member.user.tag} (${member.id})\n
           **Action:** Ban\n
           **Reason:** ${reason !== '' ? reason : 'No reason given by staff'}`
-        )
-    return msg.channel.send(banEmbed);
+        );
+    
+    const modlogsChannel = this.client.channels.get('585656872355364864');
+    modlogsChannel.send(banEmbed);
+
+    // return msg.channel.send(banEmbed);
   }
 };

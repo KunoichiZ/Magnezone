@@ -111,13 +111,10 @@ module.exports = class WarnCommand extends Command {
 
           member.ban(reason = 'Accumulated 3 warn points');
           msg.channel.send(banEmbed);
-          if (msg.guild.settings.get('mod-logs', true)) {
-            const modlogsChannel = this.client.channels.get('585656872355364864');
-            modlogsChannel.send(banEmbed);
-          }
-
+          const modlogsChannel = this.client.channels.get('585656872355364864');
+          modlogsChannel.send(banEmbed);
       }
-      
+
       return msg.channel.send(warnEmbed);
   }
 };
