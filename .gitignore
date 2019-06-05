@@ -18,3 +18,4 @@ data/.env
 
 # data
 data/sample.json
+data/databases/*
