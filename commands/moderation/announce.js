@@ -5,12 +5,12 @@ module.exports = class AnnounceCommand extends Command {
     super(client, {
       name: 'announce',
       aliases: ['news'],
-      group: 'owner',
+      group: 'moderation',
       memberName: 'announce',
       description: 'Creates an announcement',
       examples: ['announce Test message'],
+      userPermissions: ['MANAGE_CHANNELS'],
       guildOnly: true,
-      ownerOnly: true,
       args: [
         {
             key: 'announcement',
