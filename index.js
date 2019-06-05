@@ -9,7 +9,14 @@ const client = new Client({
   commandPrefix: process.env.PREFIX,
   disableEveryone: true,
   unknownCommandResponse: false,
-  selfbot: false
+  selfbot: false,
+  presence: {
+    status: 'online',
+    activity: {
+        name: '@Officer Magnezone help',
+        type: 'WATCHING',
+    }
+  }
 });
 
 sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
