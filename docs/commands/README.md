@@ -77,6 +77,12 @@ Eval command description taken from the official discord.js-commando [documentat
 | r4      | Replies with the fourth rule of the server | rule4 | N/A |
 | r5      | Replies with the fifth rule of the server | rule5 | N/A |
 
+## Switch
+| Command Name          | Description   | Aliases | Command Example |
+| ------------- | -------------  |------------- | ------------- |
+| addfc      | Adds the user's Nintendo Switch Friend Code to the database | add | N/A |
+| findfc	| Display's the user's Nintendo Switch Friend Code or obtains the selected user's friend code | fc | N/A |
+
 ## Test
 | Command Name          | Description   | Aliases | Command Example | 
 | ------------- | -------------  |------------- | ------------- |
