@@ -25,18 +25,22 @@ module.exports = class UnmuteCommand extends Command {
   run (msg, { member }) {
     if(member.manageable) {
       const muteRole = msg.guild.roles.find(role => role.name === "Muted");
+      if(member.roles.find(r => r.name === "Muted")) {
+        member.roles.remove(muteRole);
   
-      member.roles.remove(muteRole);
-  
-      const unmuteEmbed = new MessageEmbed()
-        .setColor(msg.member.displayHexColor)
-        .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
-        .setDescription(`**Action:** Unmuted <@${member.id}>`);
+        const unmuteEmbed = new MessageEmbed()
+          .setColor(msg.member.displayHexColor)
+          .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
+          .setDescription(`**Action:** Unmuted <@${member.id}>`);
 
-      const modlogsChannel = this.client.channels.get('585656872355364864');
-       modlogsChannel.send(unmuteEmbed);
+        const modlogsChannel = this.client.channels.get('585656872355364864');
+        modlogsChannel.send(unmuteEmbed);
 
-      // return msg.channel.send(unmuteEmbed);
+        // return msg.channel.send(unmuteEmbed);
+      } else {
+        return msg.channel.send("User is not currently muted!");
+      }
+      
     }
   }
 };
