@@ -36,6 +36,7 @@
     "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
+    "node-fetch": "^2.6.0",
     "sqlite": "^3.0.3"
   },
   "devDependencies": {
