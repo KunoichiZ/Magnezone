@@ -27,7 +27,24 @@ module.exports = class NicknameCommand extends Command {
     });
   }
 
-  run (msg) {
-    
+  run (msg, { member, nickname }) {
+    const modlogsChannel = this.client.channels.get('585656872355364864');
+    const oldName = member.displayName;
+    const nicknameEmbed = new MessageEmbed();
+
+    member.setNickname(nickname);
+
+    nicknameEmbed
+      .setColor(msg.member.displayHexColor)
+      .setDescription(`**Action:** Nickname change\n
+        **Member:** <@${member.id}> (${member.user.tag})\n
+        **Old name:** ${oldName}\n
+        **New name:** ${nickname}\n`);
+
+    if (msg.deletable) {
+        msg.delete();
+    }
+
+    modlogsChannel.send(nicknameEmbed);
   }
 };
