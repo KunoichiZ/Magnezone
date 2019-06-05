@@ -1,5 +1,7 @@
 const {Command} = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
+const Database = require('better-sqlite3');
+const path = require('path');
 
 module.exports = class WarnCommand extends Command {
   constructor (client) {
