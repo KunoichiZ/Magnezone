@@ -35,7 +35,7 @@
     "eslint": "^5.16.0",
     "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
-    "moment-duration-format": "^2.3.1",
+    "moment-duration-format": "2.2.2",
     "sqlite": "^3.0.3"
   },
   "devDependencies": {
