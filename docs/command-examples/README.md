@@ -5,4 +5,20 @@ sidebarDepth: 2
 
 # Command Examples
 
-Coming soon
+## Information
+
+## Misc
+
+## Moderation
+
+## Owner
+
+## Pokemon
+
+## Roles
+
+## Rules
+
+## Switch
+
+## Test
