@@ -6,6 +6,14 @@ sidebarDepth: 2
 # Command Examples
 
 ## Information
+### About
+### Docs
+### Help
+### Invite
+### Ping
+### Prefix
+### Server
+### Uptime 
 
 ## Misc
 
