@@ -9,7 +9,7 @@ module.exports = class AnnounceCommand extends Command {
       memberName: 'announce',
       description: 'Creates an announcement',
       examples: ['announce Test message'],
-      userPermissions: ['MANAGE_CHANNELS'],
+      userPermissions: ['VIEW_AUDIT_LOG'],
       guildOnly: true,
       args: [
         {
