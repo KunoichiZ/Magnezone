@@ -33,6 +33,7 @@ client.registry
     ['pokemon', 'Pokemon Commands'],
     ['roles', 'Role Commands'],
     ['rules', 'Rules Commands'],
+    ['switch', 'Nintendo Switch Commands'],
     ['test', 'Test Commands']
   ])
   .registerDefaultGroups()
