@@ -8,13 +8,13 @@ module.exports = class GiveRoleCommand extends Command {
             aliases: ['give'],
             group: 'roles',
             memberName: 'giverole',
-            description: 'Gives the user either the Writer, Artist, GCEA, RPer, Musician, Showdown, ASBer role',
+            description: 'Gives the user either the Writer, Artist, GCEA, RPer, Musician, Showdown, ASBer, or SwSh Spoilers role',
             examples: ['giverole Artist'],
             guildOnly: true,
             args: [
                 {
                     key: 'role',
-                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEAer`, `Role Player`, `Musician`, `Showdown`, `ASBer`',
+                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEAer`, `Role Player`, `Musician`, `Showdown Player`, `ASBer`, `SwSh Spoilers`',
                     type: 'string'
                 }
             ]
@@ -71,13 +71,21 @@ module.exports = class GiveRoleCommand extends Command {
                 msg.member.roles.add(musicianRole).catch(console.error);
                 msg.channel.send("You've been given the `Musician` role!");
             }
-        } else if(role === "Showdown") {
+        } else if(role === "Showdown Player") {
             const showdownRole = msg.guild.roles.find(roles => roles.name === role);
             if(msg.member.roles.has(showdownRole.id)) {
-                msg.channel.send("You already have the `Showdown` role!");
+                msg.channel.send("You already have the `Showdown Player` role!");
             } else {
                 msg.member.roles.add(showdownRole).catch(console.error);
-                msg.channel.send("You've been given the `Showdown` role!");
+                msg.channel.send("You've been given the `Showdown Player` role!");
+            }
+        } else if(role === "SwSh Spoilers") {
+            const swshRole = msg.guild.roles.find(roles => roles.name === role);
+            if(msg.member.roles.has(swshRole.id)) {
+                msg.channel.send("You already have the `SwSh Spoilers` role!");
+            } else {
+                msg.member.roles.add(swshRole).catch(console.error);
+                msg.channel.send("You've been given the `SwSh Spoilers` role!");
             }
         } 
     }
