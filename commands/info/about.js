@@ -29,7 +29,7 @@ module.exports = class AboutCommand extends Command {
         .addField('Uptime', uptime)
         .addField('License', 'GPL-3.0')
         .addField('Source Code', 'https://github.com/KunoichiZ/Magnezone')
-        .addField('Documentation', 'https://www.magnezone.kunoichiz.me/');
+        .addField('Documentation', 'https://magnezone.kunoichiz.me/');
 
     return msg.channel.send(aboutEmbed);
   }
