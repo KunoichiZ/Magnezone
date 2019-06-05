@@ -18,7 +18,7 @@ module.exports = class UnmuteCommand extends Command {
             prompt: 'Which member should I mute?',
             type: 'member'
         }
-    ]
+      ]
     });
   }
 
