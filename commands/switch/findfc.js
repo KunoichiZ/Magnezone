@@ -1,7 +1,7 @@
 const {Command} = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
-const Database = require('better-sqlite3');
-const path = require('path');
+const Keyv = require('keyv');
+const keyv = new Keyv('sqlite://data/databases/friendcodes.sqlite');
 
 module.exports = class AddFCCommand extends Command {
   constructor (client) {
@@ -18,36 +18,37 @@ module.exports = class AddFCCommand extends Command {
             key: 'member',
             prompt: 'Who did you want to find the Nintendo Switch Friend Code of?',
             type: 'member',
-            default: msg => msg.author
+            default: msg => msg.member
         }
       ]
     });
   }
 
-  run (msg, { member }) {
-    // Enter `myself` to display your own Friend Code'
-    const id = msg.member.id;
-    const conn = new Database(path.join(__dirname, '../../data/databases/friendcodes.sqlite3'));
+  async run (msg, { member }) {
+
+    const name = member.user.tag;
     const findfcEmbed = new MessageEmbed();
-
-        
-    const { fc } = conn.prepare(`SELECT friendcode FROM "${msg.guild.id}" WHERE id = "${msg.author.id}"`).get(msg.author.id);
-    findfcEmbed
-        .setColor(msg.member.displayHexColor)
-        .setAuthor(msg.author.tag, msg.author.displayAvatarURL())
-        .setDescription(`**Your Friend Code**
-            ${fc}`);
-    return msg.channel.send(findfcEmbed);
-    // if(member == "myself") {
-        
-    // } else {
-
-    // }
-    // const id = member.id;
-    // const name = member.user.tag;
+    const nickname = member.displayName;
     
-    
+    try {
+        if(await keyv.get(member.id) == null) {
+            msg.channel.send("No Friend Code was added!");
+        } else {
+            keyv.on('error', err => console.error('Keyv connection error:', err));
+            var friendcode = await keyv.get(member.id);
 
-    
+            findfcEmbed
+                .setColor(msg.member.displayHexColor)
+                .setDescription(`**Name**
+                    ${name}
+                    **Nickname**
+                    ${nickname}
+                    **Friend Code**
+                    ${friendcode}`);
+            return msg.channel.send(findfcEmbed);
+        }
+    } catch (err) {
+        msg.channel.send("An error occurred!")
+    }
   }
 };
