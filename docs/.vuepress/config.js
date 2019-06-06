@@ -16,11 +16,11 @@ module.exports = {
 			sidebarDepth: 3,
 			editLinks: true,
 			nav: [
-      	{ text: 'Home', link: '/' },
+      			{ text: 'Home', link: '/' },
 				{ text: 'Commands', link: '/commands/' },
 				{ text: 'Command Examples', link: '/command-examples/'},
-      	{ text: 'PXR Discord Server', link: 'https://discord.gg/uxMSGK' }
-    	]
-		},
-		lastUpdated: true
+      			{ text: 'PXR Discord Server', link: 'https://discord.gg/uxMSGK' }
+    		]
+	},
+	lastUpdated: true
 }
