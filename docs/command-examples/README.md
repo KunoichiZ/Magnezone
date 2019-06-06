@@ -4,7 +4,7 @@ sidebarDepth: 2
 ---
 
 # Command Examples
-test
+
 ## Information
 ### about
 ### docs
