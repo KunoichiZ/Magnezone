@@ -8,7 +8,7 @@ module.exports = class AddFCCommand extends Command {
     super(client, {
       name: 'addfc',
       aliases: ['add'],
-      group: 'switch',
+      group: 'friendcodes',
       memberName: 'addfc',
       description: 'Adds the user\'s Nintendo Switch friend code to the database',
       examples: ['addfc SW-0123-4567-8910'],
@@ -16,7 +16,7 @@ module.exports = class AddFCCommand extends Command {
       args: [
         {
             key: 'friendcode',
-            prompt: 'What is your friend code?',
+            prompt: 'What is your Nintendo Switch friend code?',
             type: 'string'
         }
       ]

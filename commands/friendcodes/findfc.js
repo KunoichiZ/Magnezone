@@ -8,7 +8,7 @@ module.exports = class AddFCCommand extends Command {
     super(client, {
       name: 'findfc',
       aliases: ['fc'],
-      group: 'switch',
+      group: 'friendcodes',
       memberName: 'findfc',
       description: 'Finds the current user\'s Nintendo Switch Friend Code or displays the selected user\'s Friend Code',
       examples: ['findfc AinoAlt', 'fc'],
