@@ -12,6 +12,14 @@ sidebarDepth: 2
 
 Eval command description taken from the official discord.js-commando [documentation](https://discord.js.org/#/docs/commando/master/commands/builtins). The rest of the descriptions (except announce and setusername) are from Favna's Ribbon [template.hbs](https://raw.githubusercontent.com/Favna/ribbon/a4b6542868aa90ebf6df557dec441f7431a14562/docs/template.hbs).
 
+## Friend Codes
+| Command Name          | Description   | Aliases | Command Example |
+| ------------- | -------------  |------------- | ------------- |
+| addfc      | Adds the user's Nintendo Switch Friend Code to the database | add | N/A |
+| addgofc	| Adds the user's Pokemon Go Friend Code to the database | N/A | N/A | 
+| findfc	| Display's the user's Nintendo Switch Friend Code or obtains the selected user's friend code | fc | N/A |
+| findgofc  | Display's the user's Pokemon Go Friend Code or obtains the selected user's friend code | gofc | N/A |
+
 ## Information
 | Command Name  | Description   | Aliases | Command Example |
 | ------------- | -------------  | ------------- | ------------- |
@@ -26,7 +34,8 @@ Eval command description taken from the official discord.js-commando [documentat
 
 ## Misc
 | Command Name  | Description   | Aliases | Command Example |
-| ------------- | -------------  |------------- | ------------- |
+| ------------- | -------------  | ------------- | ------------- |
+| coin			| Flip a coin	| coinflip		| N/A |
 | eightball 	| Ask the eightball a question, get a random response. | 8ball | N/A |
 | say			| Replies with information about the bot | copycat, repeat, echo, parrot | N/A |
 | saywut		| Shows who used the say command last | saywat | N/A |
@@ -78,10 +87,9 @@ Eval command description taken from the official discord.js-commando [documentat
 | r5      | Replies with the fifth rule of the server | rule5 | N/A |
 
 ## Switch
-| Command Name          | Description   | Aliases | Command Example |
-| ------------- | -------------  |------------- | ------------- |
-| addfc      | Adds the user's Nintendo Switch Friend Code to the database | add | N/A |
-| findfc	| Display's the user's Nintendo Switch Friend Code or obtains the selected user's friend code | fc | N/A |
+| Command Name  | Description   | Aliases | Command Example |
+| ------------- | -------------  | ------------- | ------------- |
+| eshop 		| Find a game on the Nintendo eShop | shop | N/A |
 
 ## Test
 | Command Name          | Description   | Aliases | Command Example | 
