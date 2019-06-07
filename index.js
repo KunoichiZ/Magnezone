@@ -26,6 +26,7 @@ sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
 client.registry
   .registerDefaultTypes()
   .registerGroups([
+    ['friendcodes', 'Friend Code Commands'],
     ['info', 'Information Commands'],
     ['misc', 'Misc Commands'],
     ['moderation', 'Moderation Commands'],
