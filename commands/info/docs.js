@@ -17,7 +17,7 @@ module.exports = class DocsCommand extends Command {
   run (msg) {
     const docsEmbed = new MessageEmbed()
         .setColor(msg.member.displayHexColor)
-        .addField('Officer Magnezone\'s Documentation', 'https://magnezone.kunoichiz.me/');
+        .addField('Officer Magnezone\'s Documentation', 'https://magnezone.netlify.com/');
         
     return msg.channel.send(docsEmbed);
   }

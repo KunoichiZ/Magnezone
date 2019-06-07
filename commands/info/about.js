@@ -23,7 +23,7 @@ module.exports = class AboutCommand extends Command {
         .addField('Uptime', moment.duration(process.uptime() * 1000).format('D [days], H [hours] [and] m [minutes]'))
         .addField('License', 'GPL-3.0')
         .addField('Source Code', 'https://github.com/KunoichiZ/Magnezone')
-        .addField('Documentation', 'https://magnezone.kunoichiz.me/');
+        .addField('Documentation', 'https://magnezone.netlify.com/');
 
     return msg.channel.send(aboutEmbed);
   }
