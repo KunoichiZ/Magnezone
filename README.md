@@ -14,5 +14,7 @@ For all of the available commands, please visit the documentation at [https://ma
 
 ## Credits
 * All of the dependencies listed in [package.json](./package.json).
+* [Discordjs.guide](https://discordjs.guide) for the guide.
+* [Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome) and [Discord.js-commando](https://discord.js.org/#/docs/commando/master/general/welcome) documentation for their documentaion.
 * [faizal101](https://github.com/faizal101) for some imput on some things.
 * [Favna](https://github.com/Favna) for [Ribbon](https://github.com/Favna/ribbon) as my inspiration and for the Pokemon data.
