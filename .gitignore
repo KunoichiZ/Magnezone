@@ -19,3 +19,6 @@ data/.env
 # data
 data/sample.json
 data/databases/*
+
+# package-lock.json
+package-lock.json
