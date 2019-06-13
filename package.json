@@ -31,6 +31,7 @@
     "awesome-commando": "^3.0.9",
     "awesome-djs": "^13.0.14",
     "better-sqlite3": "^5.4.0",
+    "common-tags": "^1.8.0",
     "dotenv": "^8.0.0",
     "eightball": "^1.0.1",
     "eslint": "^5.16.0",
