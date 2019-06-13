@@ -1,7 +1,5 @@
 const { Command } = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
-const moment = require('moment');
-require('moment-duration-format');
 const { stripIndents } = require('common-tags');
 
 module.exports = class ChangelogCommand extends Command {
