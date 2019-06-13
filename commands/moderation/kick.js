@@ -30,7 +30,7 @@ module.exports = class KickCommand extends Command {
     });
   }
 
-  run (msg, { member }, { reason }) {
+  run (msg, { member, reason }) {
     if (member.id === msg.author.id) return msg.reply('I don\'t think you want to kick yourself.');
     if (!member.kickable) return msg.reply('I cannot kick that member, their role is probably higher than my own!');
     // const user = msg.mentions.users.first();

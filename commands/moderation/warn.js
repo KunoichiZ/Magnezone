@@ -39,7 +39,7 @@ module.exports = class WarnCommand extends Command {
     });
   }
 
-  run (msg) {
+  run (msg, { member, points, reason }) {
     // mod-logs ID: 585656872355364864
     const conn = new Database(path.join(__dirname, '../../data/databases/warnings.sqlite3'));
     const warnEmbed = new MessageEmbed();
