@@ -1462,10 +1462,10 @@ autoprefixer@^8.2.0:
     postcss "^6.0.23"
     postcss-value-parser "^3.2.3"
 
-awesome-commando@^3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/awesome-commando/-/awesome-commando-3.0.8.tgz#53a355f4ae39ff4982c3a2e004ca13d96dc11806"
-  integrity sha512-fG8Mf5gtcl09YaNlJWwM3prlhdMok+SYoFGHjulkO92ycHKUlw6YDkHX98IWAf+XEv6wyhFqUBkzOjfoxqdE7g==
+awesome-commando@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/awesome-commando/-/awesome-commando-3.0.9.tgz#07e226730dde894b6e575ced2fcc32589bfbf19b"
+  integrity sha512-+XKnNniYU0ZlpsAduCcRTJ86ShHpGqbqor18mysCIu/fIz4cFCn/kN5D4u+GO2QvdFdBhGbp77wIvwPFK5CYLA==
   dependencies:
     common-tags "^1.8.0"
     escape-string-regexp "^1.0.5"
