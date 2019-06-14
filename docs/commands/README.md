@@ -24,13 +24,17 @@ Eval command description taken from the official discord.js-commando [documentat
 | Command Name  | Description   | Aliases | Command Example |
 | ------------- | -------------  | ------------- | ------------- |
 | about			| Replies with information about the bot | N/A | N/A
-| docs			| Replies with a link to the bot's documentation | documentation | N/A
+| docs			| Replies with a link to the bot's documentation | documentation | N/A |
+| activity 		| Displays the actvity of the selected user | presence | N/A |
+| avatar 		| Displays the avatar of the selected user | icon | N/A | 
+| changelog		| Display's tht bot's changelog | cl, log	| N/A |
 | help          | Displays a list of available commands, or detailed information for a specified command. | N/A | N/A |
 | invite		| Replies with an invite link to the server | N/A | N/A |
 | ping          | Checks the bot's ping to the Discord server.     | N/A | N/A |
 | prefix        | Shows the command prefix.      | N/A | N/A |
 | server 		| Replies with information about the server | N/A | N/A |
 | uptime 		| Displays how long the bot has been online | up, botuptime | N/A |
+| userinfo		| Displays information about the selected user | user, info, uinfo | N/A |
 
 ## Misc
 | Command Name  | Description   | Aliases | Command Example |
