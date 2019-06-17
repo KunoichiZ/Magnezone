@@ -29,7 +29,7 @@
   "dependencies": {
     "@keyv/sqlite": "^2.0.0",
     "awesome-commando": "^3.0.9",
-    "awesome-djs": "^13.0.14",
+    "awesome-djs": "^13.0.15",
     "better-sqlite3": "^5.4.0",
     "common-tags": "^1.8.0",
     "dotenv": "^8.0.0",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "vue-discord-message": "^3.0.0",
-    "vuepress": "^0.14.11",
+    "vuepress": "^1.0.1",
     "vuepress-theme-yuu": "^1.1.0"
   }
 }
