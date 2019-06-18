@@ -22,3 +22,6 @@ data/databases/*
 
 # package-lock.json
 package-lock.json
+
+# documents
+*.rtf
