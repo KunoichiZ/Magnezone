@@ -21,7 +21,7 @@ module.exports = class ChangelogCommand extends Command {
         .setColor('#11806a')
         .setAuthor(`${this.client.user.username}'s changelog`)
         .setDescription(stripIndents`
-        **Recently Added Commands:** \n%avatar, %changelog, %userinfo, %activity`);
+        **Recently Added Commands:** \n%coinflip, %fortune`);
     
     return msg.channel.send(changelogEmbed);
   }
