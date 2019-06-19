@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name: "magnezone",
-    script: "./index.js",
+    script: "./magnezone.js",
     ignore_watch : ["node_modules"],
     watch: true
   }]
