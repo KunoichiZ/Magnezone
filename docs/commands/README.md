@@ -41,6 +41,7 @@ Eval command description taken from the official discord.js-commando [documentat
 | ------------- | -------------  | ------------- | ------------- |
 | coin			| Flip a coin	| coinflip		| N/A |
 | eightball 	| Ask the eightball a question, get a random response. | 8ball | N/A |
+| fortune 		| Displays a random fortune | cookie | N/A |
 | say			| Replies with information about the bot | copycat, repeat, echo, parrot | N/A |
 | saywut		| Shows who used the say command last | saywat | N/A |
 
