@@ -52,7 +52,6 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-  // Don't know the role id?
   const role = member.guild.roles.find(role => role.name === 'Members');
   member.roles.add(role);
 });
