@@ -26,6 +26,7 @@ sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
 client.registry
   .registerDefaultTypes()
   .registerGroups([
+    ['currency', 'Currency Commands'],
     ['friendcodes', 'Friend Code Commands'],
     ['info', 'Information Commands'],
     ['misc', 'Misc Commands'],
@@ -34,6 +35,8 @@ client.registry
     ['pokemon', 'Pokemon Commands'],
     ['roles', 'Role Commands'],
     ['rules', 'Rules Commands'],
+    ['splatoon 2 misc', 'Splatoon 2 Misc Commands'],
+    ['splatoon 2 modes', 'Splatoon 2 Modes Commands'],
     ['switch', 'Nintendo Switch Commands'],
     ['test', 'Test Commands']
   ])
