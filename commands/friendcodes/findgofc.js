@@ -2,6 +2,7 @@ const {Command} = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
 const Keyv = require('keyv');
 const keyv = new Keyv('sqlite://data/databases/gofriendcodes.sqlite');
+const { stripIndents } = require('common-tags');
 
 module.exports = class FindGoFCCommand extends Command {
   constructor (client) {
@@ -39,7 +40,7 @@ module.exports = class FindGoFCCommand extends Command {
 
             findgofcEmbed
                 .setColor(msg.member.displayHexColor)
-                .setDescription(`**Name**
+                .setDescription(stripIndents`**Name**
                     ${name}
                     **Nickname**
                     ${nickname}
