@@ -19,7 +19,7 @@ const client = new Client({
     }
 });
 
-sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
+sqlite.open(path.join(__dirname, 'magnemite.sqlite3')).then((db) => {
     client.setProvider(new SQLiteProvider(db));
 });
 
