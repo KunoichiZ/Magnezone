@@ -40,6 +40,7 @@ Eval command description taken from the official discord.js-commando [documentat
 | Command Name  | Description   | Aliases | Command Example |
 | ------------- | -------------  | ------------- | ------------- |
 | coin			| Flip a coin	| coinflip		| N/A |
+| dice			| Roll a 6-sided die | die, roll | N/A |
 | eightball 	| Ask the eightball a question, get a random response. | 8ball | N/A |
 | fortune 		| Displays a random fortune | cookie | N/A |
 | say			| Replies with information about the bot | copycat, repeat, echo, parrot | N/A |
