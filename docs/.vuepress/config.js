@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Officer Magnezone',
+    title: 'Sheriff Magnezone',
 		description: 'Documentation for the Pokemon Crossroads (PXR) Discord Bot',
 		head: [
 			['link', { rel: 'icon', href: '/logo.png' }]

@@ -16,7 +16,7 @@ module.exports = class SetUsernameCommand extends Command {
           key: 'username',
           prompt: 'What username to set?',
           type: 'string',
-          default: 'Officer Magnezone'
+          default: 'Sheriff Magnezone'
         }
       ]
     });

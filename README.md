@@ -6,7 +6,7 @@
         <a href="https://discord.gg/uxMSGK"><img src="https://discordapp.com/api/guilds/165459248703209472/widget.png?style=banner3" alt="Join Discord Server" height="145px"/></a>
 </p>
 
-# Officer Magnezone
+# Sheriff Magnezone
 Discord bot for the Pokemon Crossroads Discord Channel
 
 ## Commands

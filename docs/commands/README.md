@@ -5,7 +5,7 @@ sidebarDepth: 2
 
 # Commands
 <div is="discord-messages">
-	<discord-message author="Officer Magnezone" avatar="magnezone" :bot="true" role-color="#3498db">
+	<discord-message author="Sheriff Magnezone" avatar="magnezone" :bot="true" role-color="#3498db">
 	    These are all of my commands. My prefix is %.
 	</discord-message>
 </div>
