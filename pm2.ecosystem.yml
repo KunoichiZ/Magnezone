@@ -1,7 +1,12 @@
 apps:
-  name: "magnezone",
-    script: "./index.js",
-  env:
-    NODE_ENV: development
-  env_production:
-    NODE_ENV: production
+  - script: ./index.js,
+    name: "magnezone",
+    watch: true,
+    env_production:
+      NODE_ENV: production
+  - script: ./index.js,
+    name: "magnemite2",
+    env:
+      NODE_ENV: development
+  - script: ./magnemite.js,
+    name: "magnemite1"
