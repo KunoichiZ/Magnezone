@@ -6,14 +6,14 @@ require('dotenv').config({path: path.join(__dirname, 'data/.env')});
 
 const client = new Client({
   owner: '147800635046232064',
-  commandPrefix: process.env.PREFIX,
+  commandPrefix: process.env.NODE_ENV === 'development' ? process.env.DEVPREFIX : process.env.PREFIX,
   disableEveryone: true,
   unknownCommandResponse: false,
   selfbot: false,
   presence: {
     status: 'online',
     activity: {
-        name: '@Officer Magnezone help',
+        name: '@Sheriff Magnezone help',
         type: 'WATCHING',
     }
   }
@@ -58,8 +58,18 @@ client.on('guildMemberAdd', member => {
   const role = member.guild.roles.find(role => role.name === 'Members');
   member.roles.add(role);
 });
+
+// bot-commands channel id: 
+client.on('message', message => {
+  //  const botCommandsChannel = this.client.channels.get('419672986669547540');
+  //  if(message.content.startsWith == "p!catch") {
+  //       return;
+  //  }
+  //  if(message.conent.startsWith == "p!") {
+  //     message.reply("All bot commands should be used in <#419672986669547540>.")
+  //  }
+});
  
 client.on('error', console.error);
 
-
-client.login(process.env.TOKEN);
+client.login(process.env.NODE_ENV === 'development' ? process.env.DEVTOKEN : process.env.PRODTOKEN);

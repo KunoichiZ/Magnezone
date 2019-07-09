@@ -13,7 +13,7 @@
     "discord-bot",
     "discord.js-commando",
     "magnezone",
-    "officer-magnezone",
+    "sheriff-magnezone",
     "pokemon-crossroads",
     "pxr"
   ],
@@ -21,8 +21,8 @@
     "url": "https://github.com/KunoichiZ/Magnezone/issues"
   },
   "scripts": {
-    "test": "node index.js",
-    "start": "node index.js",
+    "start": "cross-env NODE_ENV=development node index.js",
+    "start:prod": "cross-env NODE_ENV=production node index.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -46,6 +46,7 @@
     "sqlite": "^3.0.3"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "vue-discord-message": "^3.0.0",
     "vuepress": "^1.0.2",
     "vuepress-theme-yuu": "^1.1.0"
