@@ -13,6 +13,6 @@ module.exports = class ReplyCommand extends Command {
   }
 
   run (msg) {
-    return msg.say('Hi, I\'m awake!');
+    return msg.say('Bzt, I\'m awake! Bzt!');
   }
 };
