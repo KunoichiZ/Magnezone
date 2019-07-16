@@ -9,7 +9,7 @@ module.exports = class EmojiInfoCommand extends Command {
         memberName: 'emojiinfo',
         group: 'info',
         description: 'Displays information about the selected emoji',
-        examples: ['emojiinfo AinoMinako'],
+        examples: ['emojiinfo fortune'],
         guildOnly: true,
         args: [
           {
