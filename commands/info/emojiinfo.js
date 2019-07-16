@@ -15,7 +15,7 @@ module.exports = class EmojiInfoCommand extends Command {
           {
             key: 'emote',
             prompt: 'What emoji do you want the information of?',
-            type: 'string’
+            type: 'custom-emoji’
           }
         ]
       });
