@@ -13,17 +13,17 @@ module.exports = class EmojiInfoCommand extends Command {
         guildOnly: true,
         args: [
           {
-            key: 'emoji',
+            key: 'emote',
             prompt: 'What emoji do you want the information of?',
-            type: 'member'
+            type: 'string’
           }
         ]
       });
     }
   
-   run (msg, {emoji}) {
-      const emojiName = emoji;
-      const test = msg.guild.emojis.filter(emoji => emoji.name === emoji).first()
+   run (msg, {emote}) {
+      const emojiName = emote;
+      const test = msg.guild.emojis.filter(emoji => emoji.name === emote).first()
       const emojiinfoEmbed = new MessageEmbed();
       emojiinfoEmbed
         .setColor(msg.guild.member.displayHexColor)
