@@ -1,6 +1,7 @@
 
 const { Command } = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
+const moment = require('moment');
 
 module.exports = class EmojiInfoCommand extends Command {
     constructor (client) {
@@ -15,7 +16,7 @@ module.exports = class EmojiInfoCommand extends Command {
           {
             key: 'emote',
             prompt: 'What emoji do you want the information of?',
-            type: 'custom-emoji’
+            type: 'string'
           }
         ]
       });
@@ -23,11 +24,16 @@ module.exports = class EmojiInfoCommand extends Command {
   
    run (msg, {emote}) {
       const emojiName = emote;
-      const test = msg.guild.emojis.filter(emoji => emoji.name === emote).first()
+      const emoji = msg.guild.emojis.find(emoji => emoji.name === emote);
+
+      // console.log(test.createdAt);
+      console.log(msg.guild.member.displayHexColor);
       const emojiinfoEmbed = new MessageEmbed();
       emojiinfoEmbed
-        .setColor(msg.guild.member.displayHexColor)
-       
+         .setColor(msg.member.displayHexColor)
+         .setTitle(`${emoji} ${emojiName}`)
+         .addField('ID', emoji.id)
+         .addField('Added to Server', moment.utc(emoji.createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a"));
         
       return msg.channel.send(emojiinfoEmbed);
     }
