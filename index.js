@@ -45,7 +45,7 @@ client.registry
     help: true,
     prefix: true,
     ping: true,
-    eval_: false,
+    eval: true,
     commandState: true
   })
   .registerCommandsIn(path.join(__dirname, 'commands'));
