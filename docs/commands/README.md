@@ -28,6 +28,8 @@ Eval command description taken from the official discord.js-commando [documentat
 | activity 		| Displays the actvity of the selected user | presence | N/A |
 | avatar 		| Displays the avatar of the selected user | icon | N/A | 
 | changelog		| Display's tht bot's changelog | cl, log	| N/A |
+| emoji			| Displays the server's emoji | listemoji | N/A |
+| emojiinfo		| Displays information about the selected emoji | N/A | N/A |
 | help          | Displays a list of available commands, or detailed information for a specified command. | N/A | N/A |
 | invite		| Replies with an invite link to the server | N/A | N/A |
 | ping          | Checks the bot's ping to the Discord server.     | N/A | N/A |
