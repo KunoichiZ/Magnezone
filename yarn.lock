@@ -1536,7 +1536,7 @@ autoprefixer@^9.5.1:
     postcss "^7.0.16"
     postcss-value-parser "^3.3.1"
 
-awesome-commando@^3.0.9:
+awesome-commando@^3.0.10:
   version "3.0.10"
   resolved "https://registry.yarnpkg.com/awesome-commando/-/awesome-commando-3.0.10.tgz#b848d6df9b9959287c6262d952ac460f33acb8bf"
   integrity sha512-be+hvh4I+sWWfw2bzpDIukyywEQJ8j6IPjTzNcNQTYVBw5UC9BC81zsH0XuNigtlWMuNIbaZENbILmAFZudcuA==
