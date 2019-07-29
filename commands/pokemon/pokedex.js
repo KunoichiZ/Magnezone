@@ -105,20 +105,20 @@ module.exports = class PokedexCommand extends Command {
     spd = result[0].baseStats.spd;
     spe = result[0].baseStats.spe;
 
-    // switch (result[0].gender) {
-    //     case 'N':
-    //         pokeData.genders = 'None';
-    //         break;
-    //     case 'M':
-    //         pokeData.genders = '100% ♂';
-    //         break;
-    //     case 'F':
-    //         pokeData.genders = '100% ♀';
-    //         break;
-    //     default:
-    //         pokeData.genders = '50% ♂ | 50% ♀';
-    //         break;
-    // }
+    switch (result[0].gender) {
+        case 'N':
+            pokeData.genders = 'None';
+            break;
+        case 'M':
+            pokeData.genders = '100% ♂';
+            break;
+        case 'F':
+            pokeData.genders = '100% ♀';
+            break;
+        default:
+            pokeData.genders = '50% ♂ | 50% ♀';
+            break;
+    }
 
     // determine gender ratio
     if (result[0].genderRatio) {
