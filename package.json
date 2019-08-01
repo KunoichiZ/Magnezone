@@ -28,7 +28,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "@keyv/sqlite": "^2.0.0",
+    "@keyv/sqlite": "^2.0.1",
     "awesome-commando": "^3.0.10",
     "awesome-djs": "^13.0.19",
     "better-sqlite3": "^5.4.1",
