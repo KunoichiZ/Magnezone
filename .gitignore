@@ -10,6 +10,8 @@ data/.env
 # ignore sqlite databases
 *.sqlite3
 *.sqlite
+data/databases/*.sqlite
+data/databases/*.sqlite3
 
 # VSCode settings
 .vscode/
@@ -25,3 +27,6 @@ package-lock.json
 
 # documents
 *.rtf
+
+# commands
+*.command
