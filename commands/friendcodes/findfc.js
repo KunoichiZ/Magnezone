@@ -1,7 +1,7 @@
 const {Command} = require('awesome-commando');
 const { MessageEmbed } = require('awesome-djs');
-const Keyv = require('keyv');
-const keyv = new Keyv('sqlite://data/databases/friendcodes.sqlite');
+const path = require('path');
+const Database = require('better-sqlite3');
 const { stripIndents } = require('common-tags');
 
 module.exports = class AddFCCommand extends Command {
@@ -25,21 +25,23 @@ module.exports = class AddFCCommand extends Command {
     });
   }
 
-  async run (msg, { member }) {
+  run (msg, { member }) {
 
-    const name = member.user.tag;
     const findfcEmbed = new MessageEmbed();
     const nickname = member.displayName;
+
+    const conn = new Database(path.join(__dirname, '../../data/databases/friendcodes.sqlite3'));
+    const { id, name, friendcode } = conn.prepare(`SELECT id, name, friendcode FROM "${msg.guild.id}" WHERE id= ?;`).get(member.id);
+    // console.log(id, name, friendcode);
     
     try {
-        if(await keyv.get(member.id) == null) {
+        if(id == null) {
             msg.channel.send("No Friend Code was added!");
         } else {
-            keyv.on('error', err => console.error('Keyv connection error:', err));
-            var friendcode = await keyv.get(member.id);
-
             findfcEmbed
                 .setColor(msg.member.displayHexColor)
+                .setAuthor(member.user.tag, member.user.displayAvatarURL())
+                .setTitle('**Friend Code Found**')
                 .setDescription(stripIndents`**Name**
                     ${name}
                     **Nickname**
