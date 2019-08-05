@@ -1,6 +1,6 @@
 const path = require('path');
-const {Client, SQLiteProvider} = require('awesome-commando');
-const sqlite = require('sqlite');
+const {Client, SyncSQLiteProvider} = require('awesome-commando');
+const Database = require('better-sqlite3');
 
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});
 
@@ -19,9 +19,9 @@ const client = new Client({
   }
 });
 
-sqlite.open(path.join(__dirname, 'settings.sqlite3')).then((db) => {
-  client.setProvider(new SQLiteProvider(db));
-});
+const database = new Database(path.join(__dirname, 'data/databases/settings.sqlite3'));
+
+client.setProvider(new SyncSQLiteProvider(database));
 
 client.registry
   .registerDefaultTypes()
