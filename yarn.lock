@@ -8235,10 +8235,10 @@ vue-click-outside@^1.0.7:
   resolved "https://registry.yarnpkg.com/vue-click-outside/-/vue-click-outside-1.0.7.tgz#cdd2b1605e3c4944784e1794eae4a12a0f700bd6"
   integrity sha1-zdKxYF48SUR4TheU6uShKg9wC9Y=
 
-vue-discord-message@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/vue-discord-message/-/vue-discord-message-3.1.1.tgz#e904472b5a4223aab6ecc777b5a736c4e38cc704"
-  integrity sha512-ODbiajlQ7RDFhNjb1WrO6SEsl2bREv0ZOPFWKjHFRpow6WK0kL0qpSC5eN9o4V+memeVPVuQ6nIsiNY8xwf8Bw==
+vue-discord-message@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/vue-discord-message/-/vue-discord-message-3.2.2.tgz#1d5e603a8f825d40b65be025e64e6c7d395dddf9"
+  integrity sha512-B4ZGOqV7ezGiF5wNBofqx19JA8tF3WY/aIVO0UCWpw2qorocq0m/vNQIJRP8Zeo9LfBeHNqJ8IsgHPeq+2Sb4Q==
   dependencies:
     hex-to-rgba "^1.0.1"
 
@@ -8330,7 +8330,7 @@ vuepress-theme-yuu@^1.1.0:
   dependencies:
     vue-click-outside "^1.0.7"
 
-vuepress@^1.0.2:
+vuepress@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.0.3.tgz#7c744061b5a3244ab86d49ac8d66417258509f13"
   integrity sha512-+wCbyhZjaboY6VGBceai+JCdho96ZO9hVFHLnGGsj1/Zt2sKHrwWwV7lvbBO9y/IGib0YYpifpEJcpzvy3MDVg==
