@@ -1533,20 +1533,20 @@ autoprefixer@^9.5.1:
     postcss "^7.0.17"
     postcss-value-parser "^4.0.0"
 
-awesome-commando@^3.0.10:
-  version "3.0.10"
-  resolved "https://registry.yarnpkg.com/awesome-commando/-/awesome-commando-3.0.10.tgz#b848d6df9b9959287c6262d952ac460f33acb8bf"
-  integrity sha512-be+hvh4I+sWWfw2bzpDIukyywEQJ8j6IPjTzNcNQTYVBw5UC9BC81zsH0XuNigtlWMuNIbaZENbILmAFZudcuA==
+awesome-commando@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/awesome-commando/-/awesome-commando-3.0.11.tgz#863632a40b6102162d1f9e20d9bd408eeff5b672"
+  integrity sha512-PYmcbsB3VGh+jIz1Vr6vdMVzsPyu2iQIHjqDNneKriLny/SE6ILmuK+3uJzwaJBApFXamn52JmtzkoBoQSgXNQ==
   dependencies:
     common-tags "^1.8.0"
     escape-string-regexp "^1.0.5"
     moment "^2.24.0"
     require-all "^3.0.0"
 
-awesome-djs@^13.0.19:
-  version "13.0.19"
-  resolved "https://registry.yarnpkg.com/awesome-djs/-/awesome-djs-13.0.19.tgz#d625d2bcdabb12f23e35ac7f614ea39c14feee88"
-  integrity sha512-sKCiskW8/Ebvoq37YnZ+dR4s7gktxvNb6NQPZWlYDLH2qoDD7c+8lnPv4XAUBv+aBh1xMI0uZjkUpVqwej44Pw==
+awesome-djs@^13.0.20:
+  version "13.0.20"
+  resolved "https://registry.yarnpkg.com/awesome-djs/-/awesome-djs-13.0.20.tgz#68f2cf4cda4ff6858a73aa279fce663968442ae6"
+  integrity sha512-lvAFYogn2wPGKraTdAPyeFCTdJwr9Tkme6I5MBGc7stCDt3X9vXnKdwVok6woTeqboQhC+VLiOzQ8E+q3n3XNg==
   dependencies:
     form-data "^2.3.3"
     node-fetch "^2.3.0"
