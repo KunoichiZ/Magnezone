@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "awesome-commando": "^3.0.11",
-    "awesome-djs": "^13.0.20",
+    "awesome-djs": "^13.0.21",
     "better-sqlite3": "^5.4.2",
     "common-tags": "^1.8.0",
     "discord-money": "^0.2.0",
