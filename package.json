@@ -47,7 +47,7 @@
   "devDependencies": {
     "cross-env": "^5.2.1",
     "vue-discord-message": "^3.2.2",
-    "vuepress": "^1.0.4",
+    "vuepress": "^1.1.0",
     "vuepress-theme-yuu": "^1.1.0"
   }
 }
