@@ -45,7 +45,7 @@
     "sqlite": "^3.0.3"
   },
   "devDependencies": {
-    "cross-env": "^5.2.1",
+    "cross-env": "^6.0.0",
     "vue-discord-message": "^3.2.2",
     "vuepress": "^1.1.0",
     "vuepress-theme-yuu": "^1.1.0"
