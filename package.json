@@ -35,7 +35,7 @@
     "discord-money": "^0.2.0",
     "dotenv": "^8.1.0",
     "eightball": "^1.0.1",
-    "eslint": "^6.5.0",
+    "eslint": "^6.5.1",
     "fuse.js": "^3.4.5",
     "moment": "^2.24.0",
     "moment-duration-format": "2.2.2",
