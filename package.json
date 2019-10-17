@@ -33,7 +33,7 @@
     "better-sqlite3": "^5.4.3",
     "common-tags": "^1.8.0",
     "discord-money": "^0.2.0",
-    "dotenv": "^8.1.0",
+    "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
     "eslint": "^6.5.1",
     "fuse.js": "^3.4.5",
