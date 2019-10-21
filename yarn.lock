@@ -8393,10 +8393,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-yuu@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-yuu/-/vuepress-theme-yuu-2.1.0.tgz#8fc242eda8c3d34e25303d1e11f092d4b7ae2690"
-  integrity sha512-/7kUQydc/51mDKNqyr67CYDsxxgK3+r7OtSg86LIp2GnFibSPEvUT+carnIkerHMixorVFWzFuI4+gqxUVhe5w==
+vuepress-theme-yuu@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-yuu/-/vuepress-theme-yuu-2.2.0.tgz#534dbb3da2ced745e01a8fd1b01fdd55d6d91fc9"
+  integrity sha512-UdyOTrk6DEE+f9LXA6ZxD4cAQg/izGnAt+8ETRLa/G1rlKtJMuMlEfDY/RZox/YrzWp4/+wV3XlU7NCD8o4lgg==
   dependencies:
     vue-click-outside "^1.0.7"
 
