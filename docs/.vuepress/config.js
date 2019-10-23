@@ -8,7 +8,9 @@ module.exports = {
     theme: 'yuu',
     themeConfig: {
 			yuu: {
-				colorThemes: ['blue', 'red']
+				colorThemes: ['blue', 'red', 'green', 'purple'],
+				defaultColorTheme: 'red',
+				defaultDarkTheme: true,
 			},
 			repo: 'KunoichiZ/Magnezone',
 			base: '/Magnezone/',
