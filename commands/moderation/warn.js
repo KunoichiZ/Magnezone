@@ -1,5 +1,5 @@
-const {Command} = require('awesome-commando');
-const { MessageEmbed } = require('awesome-djs');
+const {Command} = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const Database = require('better-sqlite3');
 const path = require('path');
 

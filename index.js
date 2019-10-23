@@ -1,5 +1,5 @@
 const path = require('path');
-const {Client, SyncSQLiteProvider} = require('awesome-commando');
+const {Client, SyncSQLiteProvider} = require('discord.js-commando');
 const Database = require('better-sqlite3');
 
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});

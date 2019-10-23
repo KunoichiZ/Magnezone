@@ -1,5 +1,5 @@
 const path = require('path');
-const {Client, SQLiteProvider} = require('awesome-commando');
+const {Client, SQLiteProvider} = require('discord.js-commando');
 const sqlite = require('sqlite');
 
 require('dotenv').config({path: path.join(__dirname, 'data/.env')});

@@ -1,4 +1,4 @@
-const {Command} = require('awesome-commando');
+const {Command} = require('discord.js-commando');
 const sides = ['heads','tails'];
 
 module.exports = class CoinflipCommand extends Command {

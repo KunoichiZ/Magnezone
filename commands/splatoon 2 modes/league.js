@@ -1,5 +1,5 @@
-const { Command } = require('awesome-commando');
-const { MessageEmbed } = require('awesome-djs');
+const { Command } = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
 const request = require('request');
 
@@ -34,7 +34,7 @@ module.exports = class LeagueCommand extends Command {
 		    var nextLeagueMapEnds = moment(moment.unix(body.league[1].end_time).toDate()).format("MM-DD-YYYY HH:mm")
 			
 		    // embed League Battle information
-		    const leagueEmbed = new Discord.MessageEmbed()
+		    const leagueEmbed = new MessageEmbed()
 			    .setTitle("League Maps")
 			    .setColor(11545691)
 			    .setThumbnail("https://github.com/KunoichiZ/fuguri-bot/blob/master/images/logos/league.png?raw=true")

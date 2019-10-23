@@ -1,5 +1,5 @@
-const { Command } = require('awesome-commando');
-const Discord = require('awesome-djs');
+const { Command } = require('discord.js-commando');
+const Discord = require('discord.js');
 
 module.exports = class GiveRoleCommand extends Command {
     constructor(client) {

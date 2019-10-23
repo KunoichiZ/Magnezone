@@ -1,4 +1,4 @@
-const {Command} = require('awesome-commando');
+const {Command} = require('discord.js-commando');
 
 module.exports = class SetUsernameCommand extends Command {
   constructor (client) {

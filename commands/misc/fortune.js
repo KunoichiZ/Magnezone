@@ -1,5 +1,5 @@
-const { Command } = require('awesome-commando');
-const { MessageEmbed } = require('awesome-djs');
+const { Command } = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const Fuse = require('fuse.js');
 var fs = require("fs");
 let fortunes = JSON.parse(fs.readFileSync("./data/fortunes.json", "utf8"))

@@ -1,6 +1,6 @@
 
-const { Command } = require('awesome-commando');
-const { MessageEmbed } = require('awesome-djs');
+const { Command } = require('discord.js-commando');
+const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
 
 module.exports = class EmojiInfoCommand extends Command {
