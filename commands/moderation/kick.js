@@ -11,7 +11,7 @@ module.exports = class KickCommand extends Command {
       group: 'moderation',
       memberName: 'kick',
       description: 'Kicks a member from the server',
-      examples: ['ban AinoAlt annoying'],
+      examples: ['kick AinoAlt annoying'],
       userPermissions: ['KICK_MEMBERS'],
       guildOnly: true,
       args: [
