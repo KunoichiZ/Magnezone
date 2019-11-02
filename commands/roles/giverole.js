@@ -14,7 +14,7 @@ module.exports = class GiveRoleCommand extends Command {
             args: [
                 {
                     key: 'role',
-                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEAer`, `Role Player`, `Musician`, `Showdown Player`, `ASBer`, `SwSh Spoilers`',
+                    prompt: 'What role do you want to give yourself? You can choose from `Writer`, `Artist`, `GCEAer`, `Role Player`, `Musician`, `Showdown Player`, `ASBer`, `SwSh Spoilers`, `SwSh Leeks`',
                     type: 'string'
                 }
             ]
@@ -86,6 +86,14 @@ module.exports = class GiveRoleCommand extends Command {
             } else {
                 msg.member.roles.add(swshRole).catch(console.error);
                 msg.channel.send("You've been given the `SwSh Spoilers` role!");
+            }
+        } else if(role === "SwSh Leeks") {
+            const swshLeeksRole = msg.guild.roles.find(roles => roles.name === role);
+            if(msg.member.roles.has(swshLeeksRole.id)) {
+                msg.channel.send("You already have the `SwSh Leeks` role!");
+            } else {
+                msg.member.roles.add(swshLeeksRole).catch(console.error);
+                msg.channel.send("You've been given the `SwSh Leeks` role!");
             }
         } 
     }
