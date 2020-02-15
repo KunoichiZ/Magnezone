@@ -9,20 +9,15 @@ module.exports = class InviteCommand extends Command {
       memberName: 'invite',
       description: 'Replies with an invite link to the server',
       examples: ['invite'],
-      guildOnly: true
+      guildOnly: true,
+      ownerOnly: true
     });
   }
 
   run (msg) {
     const rulesChannel = msg.guild.channels.find(channel => channel.name === "rules");
-    var options = {
-        maxAge: 0,
-        maxUses: 1,
-        temporary: false,
-        unique: true
-    };
 
-    rulesChannel.createInvite(rulesChannel.id, options).then(invite => 
+    rulesChannel.createInvite({ temporary: false, reason: 'New invite', maxAge: 0, maxUses: 0, unique: true }).then(invite => 
         msg.say(invite.url)
     );
   }
