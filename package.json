@@ -37,7 +37,7 @@
     "eightball": "^1.0.1",
     "eslint": "^6.8.0",
     "fuse.js": "^5.2.3",
-    "moment": "^2.24.0",
+    "moment": "^2.25.1",
     "moment-duration-format": "2.2.2",
     "node-fetch": "^2.6.0",
     "request": "^2.88.2",
