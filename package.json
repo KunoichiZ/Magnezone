@@ -36,7 +36,7 @@
     "dotenv": "^8.2.0",
     "eightball": "^1.0.1",
     "eslint": "^7.3.1",
-    "fuse.js": "^6.3.1",
+    "fuse.js": "^6.4.0",
     "moment": "^2.27.0",
     "moment-duration-format": "2.2.2",
     "node-fetch": "^2.6.0",
