@@ -48,5 +48,11 @@
     "vue-discord-message": "^4.0.0",
     "vuepress": "^1.5.2",
     "vuepress-theme-yuu": "^2.3.0"
+  },
+  "resolutions": {
+    "**/**/kind-of": "^6.0.3",
+    "**/**/serialize-javascript": "^2.1.1",
+    "**/**/minimist": "^1.2.3",
+    "**/**/elliptic": "^6.5.3"
   }
 }
