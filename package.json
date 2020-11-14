@@ -41,7 +41,7 @@
     "moment-duration-format": "2.2.2",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2",
-    "sqlite": "^4.0.15"
+    "sqlite": "^4.0.17"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
