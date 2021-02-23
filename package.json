@@ -47,7 +47,7 @@
     "cross-env": "^7.0.3",
     "vue-discord-message": "^5.0.2",
     "vuepress": "^1.8.2",
-    "vuepress-theme-yuu": "^3.0.0"
+    "vuepress-theme-yuu": "^3.0.1"
   },
   "resolutions": {
     "**/**/kind-of": "^6.0.3",
