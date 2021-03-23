@@ -8090,10 +8090,10 @@ vue-click-outside@^1.1.0:
   resolved "https://registry.yarnpkg.com/vue-click-outside/-/vue-click-outside-1.1.0.tgz#48b7680b518923e701643cccb3e165854aad99eb"
   integrity sha512-pNyvAA9mRXJwPHlHJyjMb4IONSc7khS5lxGcMyE2EIKgNMAO279PWM9Hyq0d5J4FkiSRdmFLwnbjDd5UtPizHQ==
 
-vue-discord-message@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/vue-discord-message/-/vue-discord-message-5.0.2.tgz#494b276842baba5fe7093309d2da682ddcd6b6c9"
-  integrity sha512-VGuIh3930XnX3NEF8XL3L/NqqRyx1G+l7XzqJ5Yb0bJ0XLzFSj1yKlp3ZJD9glgKpCJ53dYJ9BsqTiWONRHqrg==
+vue-discord-message@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/vue-discord-message/-/vue-discord-message-5.0.3.tgz#084bab5c74bfd39e92d7e30420f86447c002d5be"
+  integrity sha512-LbZsVR78dwEe6i06n3YKGYACv3FPg3AfWGbdg2t1/2HZzSpaFmEHeXlp5x/OH1gk3E0jlXGclKn4dtn6PytrKQ==
   dependencies:
     hex-to-rgba "^1.0.1"
 
