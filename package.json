@@ -39,7 +39,7 @@
     "fuse.js": "^6.6.2",
     "moment": "^2.29.3",
     "moment-duration-format": "2.2.2",
-    "node-fetch": "^3.2.5",
+    "node-fetch": "^3.2.6",
     "request": "^2.88.2",
     "sqlite": "^4.1.1"
   },
