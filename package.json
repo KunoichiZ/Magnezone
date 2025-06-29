@@ -33,7 +33,7 @@
     "discord-money": "^0.2.0",
     "discord.js": "discordjs/discord.js",
     "discord.js-commando": "discordjs/Commando",
-    "dotenv": "^16.5.0",
+    "dotenv": "^16.6.1",
     "eightball": "^1.0.1",
     "eslint": "^9.29.0",
     "fuse.js": "^7.1.0",
