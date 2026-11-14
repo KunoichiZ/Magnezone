@@ -35,7 +35,7 @@
     "discord.js-commando": "discordjs/Commando",
     "dotenv": "^18.0.10",
     "eightball": "^1.0.1",
-    "eslint": "^10.14.0",
+    "eslint": "^10.15.0",
     "fuse.js": "^7.5.0",
     "moment": "^2.31.0",
     "moment-duration-format": "2.2.2",
